@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Press Coverage | All Teens Financial Academy</title>
+    <meta name="description" content="Latest news, press coverage, and media mentions of All Teens Financial Academy's impact on financial literacy education.">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Unified ATFA Stylesheets -->
+    <link rel="stylesheet" href="css/atfa-unified.css">
+    
+    <!-- News Page uses unified ATFA design system -->
+    <style>
+        /* Additional News-specific styles that extend the unified system */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--atfa-space-8);
+            margin-top: var(--atfa-space-12);
+        }
+        
+        .news-badge {
+            position: absolute;
+            top: var(--atfa-space-4);
+            left: var(--atfa-space-4);
+            background: var(--atfa-primary);
+            color: var(--atfa-white);
+            padding: var(--atfa-space-1) var(--atfa-space-3);
+            border-radius: var(--atfa-radius-lg);
+            font-size: var(--atfa-text-xs);
+            font-weight: var(--atfa-weight-semibold);
+        }
+        
+        .news-image {
+            height: 200px;
+            background: var(--atfa-gradient-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--atfa-white);
+            font-size: var(--atfa-text-5xl);
+            position: relative;
+        }
+        
+        .news-content {
+            padding: var(--atfa-space-6);
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .news-meta {
+            display: flex;
+            align-items: center;
+            gap: var(--atfa-space-4);
+            margin-bottom: var(--atfa-space-4);
+            font-size: var(--atfa-text-sm);
+            color: var(--atfa-gray-600);
+        }
+        
+        .news-source {
+            background: var(--atfa-gray-100);
+            padding: var(--atfa-space-1) var(--atfa-space-3);
+            border-radius: var(--atfa-radius-lg);
+            font-weight: var(--atfa-weight-medium);
+            color: var(--atfa-gray-700);
+        }
+        
+        .news-date {
+            color: var(--atfa-gray-500);
+        }
+        
+        .news-title {
+            font-family: var(--atfa-font-heading);
+            font-size: var(--atfa-text-xl);
+            font-weight: var(--atfa-weight-semibold);
+            color: var(--atfa-gray-900);
+            margin-bottom: var(--atfa-space-4);
+            line-height: var(--atfa-leading-snug);
+        }
+        
+        .news-summary {
+            color: var(--atfa-gray-600);
+            line-height: var(--atfa-leading-relaxed);
+            margin-bottom: var(--atfa-space-6);
+            flex-grow: 1;
+        }
+        
+        .news-link {
+            background: var(--atfa-primary);
+            color: var(--atfa-white);
+            padding: var(--atfa-space-3) var(--atfa-space-6);
+            border-radius: var(--atfa-radius-xl);
+            text-decoration: none;
+            font-weight: var(--atfa-weight-semibold);
+            text-align: center;
+            transition: all var(--atfa-transition-base);
+            display: inline-block;
+        }
+        
+        .news-link:hover {
+            background: var(--atfa-primary-light);
+            transform: translateY(-2px);
+            box-shadow: var(--atfa-shadow-md);
+        }
+        
+        .news-link.external::after {
+            content: " ↗";
+            font-size: var(--atfa-text-sm);
+        }
+        
+        .filter-tabs {
+            display: flex;
+            gap: var(--atfa-space-4);
+            margin-bottom: var(--atfa-space-8);
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .filter-tab {
+            padding: var(--atfa-space-3) var(--atfa-space-6);
+            border: 2px solid var(--atfa-gray-300);
+            background: var(--atfa-white);
+            border-radius: var(--atfa-radius-xl);
+            cursor: pointer;
+            transition: all var(--atfa-transition-base);
+            font-weight: var(--atfa-weight-medium);
+            color: var(--atfa-gray-600);
+        }
+        
+        .filter-tab.active {
+            border-color: var(--atfa-primary);
+            background: var(--atfa-primary);
+            color: var(--atfa-white);
+        }
+        
+        .filter-tab:hover {
+            border-color: var(--atfa-primary);
+            color: var(--atfa-primary);
+        }
+        
+        .filter-tab.active:hover {
+            color: var(--atfa-white);
+        }
+        
+        @media (max-width: 768px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .filter-tabs {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">💰</div>
+                <span class="logo-text">All Teens Financial Academy (ATFA)</span>
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="team.html" class="nav-link">Team</a>
+                <a href="news.html" class="nav-link">News</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="https://courses.atfaacademy.org/" class="btn-earn">Start Learning</a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- News Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">News & <span class="highlight">Press Coverage</span></h1>
+                <p class="hero-subtitle">Latest media coverage and recognition of ATFA's impact on financial literacy education</p>
+            </div>
+            
+            <div class="card bg-white rounded-2xl shadow-lg p-8 m-8">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">420+</span>
+                        <span class="stat-label">News Articles</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">Major Media Outlets</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">2024</span>
+                        <span class="stat-label">Award Recognition</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">150+</span>
+                        <span class="stat-label">Countries Reached</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news-section">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">All News</button>
+                <button class="filter-tab" data-filter="awards">Awards</button>
+                <button class="filter-tab" data-filter="media">Media Coverage</button>
+                <button class="filter-tab" data-filter="legislation">Legislation</button>
+            </div>
+            
+            <div class="news-grid">
+                <!-- Featured Article -->
+                <div class="card card-featured" data-category="awards">
+                    <div class="news-image">
+                        <div class="news-badge">Featured</div>
+                        🏆
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-source">Points of Light</span>
+                            <span class="news-date">April 2, 2024</span>
+                        </div>
+                        <h3 class="news-title">Teen CEO Empowers Global Youth With Financial Literacy</h3>
+                        <p class="news-summary">Recognition of Ashwin Joshi as a Daily Point of Light Award recipient for founding ATFA in 2020. The nonprofit has reached nearly 100,000 students across 190 countries and advocates for financial education as a graduation requirement.</p>
+                        <a href="https://www.pointsoflight.org/awards/teen-ceo-empowers-global-youth-with-financial-literacy/" class="news-link external" target="_blank" rel="noopener noreferrer">Read Full Article</a>
+                    </div>
+                </div>
+
+                <!-- Seattle Times Article -->
+                <div class="card" data-category="legislation media">
+                    <div class="news-image">📰</div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-source">The Seattle Times</span>
+                            <span class="news-date">February 29, 2024</span>
+                        </div>
+                        <h3 class="news-title">Tri-Cities student lobbies for more financial literacy in WA schools</h3>
+                        <p class="news-summary">Profile of Ashwin Joshi's advocacy for House Bill 1915 requiring financial education in Washington schools. Includes survey data showing only 22% of students feel confident about financial challenges.</p>
+                        <a href="https://www.seattletimes.com/seattle-news/education/financial-literacy-may-soon-be-required-in-wa-to-graduate-meet-the-teen-behind-it/" class="news-link external" target="_blank" rel="noopener noreferrer">Read Full Article</a>
+                    </div>
+                </div>
+
+                <!-- Yahoo News -->
+                <div class="card" data-category="legislation media">
+                    <div class="news-image">📺</div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-source">Yahoo News</span>
+                            <span class="news-date">February 26, 2024</span>
+                        </div>
+                        <h3 class="news-title">Financial literacy may soon be required in WA to graduate</h3>
+                        <p class="news-summary">Coverage of Joshi's legislative advocacy efforts and his founding of ATFA to address the gap in financial education for teenagers.</p>
+                        <a href="https://www.yahoo.com/news/financial-literacy-may-soon-required-130000052.html" class="news-link external" target="_blank" rel="noopener noreferrer">Read Full Article</a>
+                    </div>
+                </div>
+
+                <!-- NBC Right Now -->
+                <div class="card" data-category="media">
+                    <div class="news-image">📹</div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-source">NBC Right Now</span>
+                            <span class="news-date">September 12, 2023</span>
+                        </div>
+                        <h3 class="news-title">Nonprofit spotlight: Ashwin Teen financial academy</h3>
+                        <p class="news-summary">Local TV news segment featuring ATFA as part of their nonprofit spotlight series focusing on financial education for teens.</p>
+                        <a href="https://www.nbcrightnow.com/top_video/nonprofit-spotlight-ashwin-teen-financial-academy/video_ce994e5e-5172-11ee-91f0-9b3ca96e86a7.html" class="news-link external" target="_blank" rel="noopener noreferrer">Watch Video</a>
+                    </div>
+                </div>
+
+                <!-- King Newswire -->
+                <div class="card" data-category="media">
+                    <div class="news-image">📄</div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-source">King Newswire</span>
+                            <span class="news-date">October 31, 2023</span>
+                        </div>
+                        <h3 class="news-title">ATFA Leads the Way in Empowering Youth Through Financial Literacy</h3>
+                        <p class="news-summary">Official press release announcing ATFA's impact reaching over 10,000 students in 5 countries and collaboration with Washington State officials on financial literacy initiatives.</p>
+                        <a href="https://kingnewswire.com/ashwin-teen-financial-academy-atfa-a-501-c-3-leads-the-way-in-empowering-youth-through-financial-literacy-2310317445/" class="news-link external" target="_blank" rel="noopener noreferrer">Read Press Release</a>
+                    </div>
+                </div>
+
+                <!-- StockSense Collaboration -->
+                <div class="card" data-category="media">
+                    <div class="news-image">🤝</div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-source">ABNewswire</span>
+                            <span class="news-date">2024</span>
+                        </div>
+                        <h3 class="news-title">ATFA Collaborates with StockSense to Enhance Financial Literacy</h3>
+                        <p class="news-summary">Press release announcing strategic collaboration between ATFA and StockSense to expand mobile financial literacy education.</p>
+                        <a href="https://www.abnewswire.com/pressreleases/ashwin-teen-financial-academy-atfa-collaborates-with-stocksense-to-enhance-financial-literacy_688621.html" class="news-link external" target="_blank" rel="noopener noreferrer">Read Full Article</a>
+                    </div>
+                </div>
+
+                <!-- Yakima Herald -->
+                <div class="card" data-category="legislation media">
+                    <div class="news-image">🗞️</div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-source">Yakima Herald</span>
+                            <span class="news-date">2024</span>
+                        </div>
+                        <h3 class="news-title">Meet the Tri-City teen behind financial literacy legislation</h3>
+                        <p class="news-summary">Regional newspaper coverage of Joshi's legislative advocacy and ATFA's mission to bring financial education to Washington state schools.</p>
+                        <a href="https://www.yakimaherald.com/news/northwest/financial-literacy-may-soon-be-required-in-wa-to-graduate-meet-the-tri-city-teen/article_70087683-c8e7-5660-b3b8-ce0b3d6d374f.html" class="news-link external" target="_blank" rel="noopener noreferrer">Read Full Article</a>
+                    </div>
+                </div>
+
+                <!-- KEPR TV -->
+                <div class="card" data-category="legislation media">
+                    <div class="news-image">📺</div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-source">KEPR TV</span>
+                            <span class="news-date">2024</span>
+                        </div>
+                        <h3 class="news-title">Southridge senior fights for financial literacy in schools</h3>
+                        <p class="news-summary">Local TV news coverage of Joshi's legislative advocacy efforts for financial literacy requirements and House Bill 1915 progress.</p>
+                        <a href="https://keprtv.com/news/local/southridge-senior-fights-for-financial-literacy-in-schools-house-bill-1915-progresses" class="news-link external" target="_blank" rel="noopener noreferrer">Watch Coverage</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">💰</div>
+                        <span class="logo-text">All Teens Financial Academy (ATFA)</span>
+                    </div>
+                    <p class="footer-description">Empowering teenagers with essential financial literacy skills through peer-to-peer education and practical learning.</p>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/@atfaacademy" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow ATFA on YouTube">
+                            <span class="social-icon">📺</span> YouTube
+                        </a>
+                        <a href="https://www.instagram.com/atfaacademy/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow ATFA on Instagram">
+                            <span class="social-icon">📸</span> Instagram
+                        </a>
+                        <a href="https://www.linkedin.com/company/all-teens-financial-academy/posts/?feedView=all" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow ATFA on LinkedIn">
+                            <span class="social-icon">💼</span> LinkedIn
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Courses</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+BAS101+3000/about">Budgeting & Saving</a></li>
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+CR101+3000/about">Credit</a></li>
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+SM101+3000/about">Stock Market</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Get Involved</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://atfaacademy.com/start-a-chapter/">Start a Chapter</a></li>
+                        <li><a href="https://atfaacademy.com/contact/">Volunteer</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">About</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://atfaacademy.com/about/">Our Mission</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="https://atfaacademy.com/contact/">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 All Teen Financial Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.min.js" defer></script>
+    
+    <!-- News Filtering JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterTabs = document.querySelectorAll('.filter-tab');
+            const newsCards = document.querySelectorAll('.news-card');
+            
+            filterTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    // Remove active class from all tabs
+                    filterTabs.forEach(t => t.classList.remove('active'));
+                    // Add active class to clicked tab
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    
+                    newsCards.forEach(card => {
+                        if (filter === 'all') {
+                            card.style.display = 'flex';
+                        } else {
+                            const categories = card.getAttribute('data-category');
+                            if (categories && categories.includes(filter)) {
+                                card.style.display = 'flex';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | All Teens Financial Academy - Our Mission & Impact</title>
+    <meta name="description" content="Learn about All Teens Financial Academy's mission to provide free financial literacy education to teenagers worldwide through peer-to-peer learning.">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💰</text></svg>">
+    
+    <!-- Stylesheets -->
+    <style>
+        /* Import the same design system from main site */
+        :root {
+            --atfa-primary: #1B5E20;
+            --atfa-primary-light: #2E7D32;
+            --atfa-secondary: #FF8F00;
+            --atfa-secondary-light: #FFA726;
+            --atfa-accent: #0D47A1;
+            --atfa-accent-light: #1976D2;
+            --atfa-white: #FFFFFF;
+            --atfa-light: #F8F9FA;
+            --atfa-gray-100: #F5F5F5;
+            --atfa-gray-200: #EEEEEE;
+            --atfa-gray-300: #E0E0E0;
+            --atfa-gray-400: #BDBDBD;
+            --atfa-gray-500: #9E9E9E;
+            --atfa-gray-600: #757575;
+            --atfa-gray-700: #616161;
+            --atfa-gray-800: #424242;
+            --atfa-gray-900: #212121;
+            --atfa-font-heading: 'Poppins', sans-serif;
+            --atfa-font-body: 'Inter', sans-serif;
+            --atfa-space-xs: 0.5rem;
+            --atfa-space-sm: 1rem;
+            --atfa-space-md: 1.5rem;
+            --atfa-space-lg: 2rem;
+            --atfa-space-xl: 3rem;
+            --atfa-space-2xl: 4rem;
+            --atfa-space-3xl: 6rem;
+            --atfa-radius-sm: 8px;
+            --atfa-radius-md: 12px;
+            --atfa-radius-lg: 16px;
+            --atfa-radius-xl: 24px;
+            --atfa-shadow-sm: 0 2px 4px rgba(0,0,0,0.06);
+            --atfa-shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+            --atfa-shadow-lg: 0 8px 24px rgba(0,0,0,0.12);
+            --atfa-shadow-xl: 0 16px 40px rgba(0,0,0,0.16);
+            --atfa-gradient-primary: linear-gradient(135deg, var(--atfa-primary) 0%, var(--atfa-primary-light) 100%);
+            --atfa-gradient-secondary: linear-gradient(135deg, var(--atfa-secondary) 0%, var(--atfa-secondary-light) 100%);
+            --atfa-gradient-hero: linear-gradient(135deg, var(--atfa-primary) 0%, var(--atfa-accent) 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--atfa-font-body);
+            line-height: 1.6;
+            color: var(--atfa-gray-800);
+            background-color: var(--atfa-white);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--atfa-space-sm);
+        }
+
+        /* Navigation - same as homepage */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--atfa-gray-200);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--atfa-space-sm);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: var(--atfa-space-sm);
+            font-family: var(--atfa-font-heading);
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: var(--atfa-primary);
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--atfa-gradient-primary);
+            border-radius: var(--atfa-radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: var(--atfa-shadow-md);
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: var(--atfa-space-lg);
+        }
+
+        .nav-link {
+            color: var(--atfa-gray-700);
+            text-decoration: none;
+            font-weight: 500;
+            padding: var(--atfa-space-xs) var(--atfa-space-sm);
+            border-radius: var(--atfa-radius-sm);
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--atfa-primary);
+            background: var(--atfa-gray-100);
+        }
+
+        .btn-earn {
+            background: var(--atfa-gradient-secondary);
+            color: var(--atfa-white);
+            padding: var(--atfa-space-md) var(--atfa-space-xl);
+            border-radius: var(--atfa-radius-md);
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-earn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--atfa-shadow-lg);
+        }
+
+        /* About Hero Section */
+        .about-hero {
+            padding: 120px 0 80px;
+            background: var(--atfa-gradient-hero);
+            color: var(--atfa-white);
+            text-align: center;
+        }
+
+        .hero-title {
+            font-family: var(--atfa-font-heading);
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: var(--atfa-space-lg);
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Mission Section */
+        .mission-section {
+            padding: var(--atfa-space-3xl) 0;
+            background: var(--atfa-white);
+        }
+
+        .mission-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--atfa-space-3xl);
+            align-items: center;
+        }
+
+        .mission-content h2 {
+            font-family: var(--atfa-font-heading);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--atfa-gray-900);
+            margin-bottom: var(--atfa-space-lg);
+        }
+
+        .mission-content p {
+            font-size: 1.1rem;
+            color: var(--atfa-gray-600);
+            margin-bottom: var(--atfa-space-md);
+        }
+
+        .mission-visual {
+            background: var(--atfa-gradient-primary);
+            border-radius: var(--atfa-radius-xl);
+            padding: var(--atfa-space-3xl);
+            text-align: center;
+            color: var(--atfa-white);
+        }
+
+        .mission-icon {
+            font-size: 5rem;
+            margin-bottom: var(--atfa-space-lg);
+        }
+
+        .mission-stat {
+            font-size: 2rem;
+            font-weight: 800;
+            display: block;
+            margin-bottom: var(--atfa-space-xs);
+        }
+
+        .mission-label {
+            opacity: 0.9;
+        }
+
+        /* Values Section */
+        .values-section {
+            padding: var(--atfa-space-3xl) 0;
+            background: var(--atfa-light);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--atfa-space-3xl);
+        }
+
+        .section-title {
+            font-family: var(--atfa-font-heading);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--atfa-gray-900);
+            margin-bottom: var(--atfa-space-md);
+        }
+
+        .section-subtitle {
+            font-size: 1.25rem;
+            color: var(--atfa-gray-600);
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--atfa-space-xl);
+        }
+
+        .value-card {
+            background: var(--atfa-white);
+            padding: var(--atfa-space-xl);
+            border-radius: var(--atfa-radius-xl);
+            box-shadow: var(--atfa-shadow-md);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--atfa-shadow-lg);
+        }
+
+        .value-icon {
+            font-size: 3rem;
+            margin-bottom: var(--atfa-space-md);
+        }
+
+        .value-title {
+            font-family: var(--atfa-font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--atfa-gray-900);
+            margin-bottom: var(--atfa-space-md);
+        }
+
+        .value-description {
+            color: var(--atfa-gray-600);
+            line-height: 1.6;
+        }
+
+        /* Impact Section */
+        .impact-section {
+            padding: var(--atfa-space-3xl) 0;
+            background: var(--atfa-white);
+        }
+
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--atfa-space-xl);
+            margin-top: var(--atfa-space-xl);
+        }
+
+        .impact-card {
+            text-align: center;
+            padding: var(--atfa-space-xl);
+            background: var(--atfa-light);
+            border-radius: var(--atfa-radius-xl);
+            transition: all 0.3s ease;
+        }
+
+        .impact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--atfa-shadow-md);
+        }
+
+        .impact-number {
+            font-family: var(--atfa-font-heading);
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--atfa-primary);
+            display: block;
+            margin-bottom: var(--atfa-space-xs);
+        }
+
+        .impact-label {
+            font-weight: 600;
+            color: var(--atfa-gray-700);
+        }
+
+        /* Footer - same as homepage */
+        .footer {
+            background: var(--atfa-gray-900);
+            color: var(--atfa-white);
+            padding: var(--atfa-space-3xl) 0 var(--atfa-space-xl);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: var(--atfa-space-xl);
+            margin-bottom: var(--atfa-space-xl);
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: var(--atfa-space-sm);
+            font-family: var(--atfa-font-heading);
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin-bottom: var(--atfa-space-md);
+        }
+
+        .footer-description {
+            color: var(--atfa-gray-400);
+            line-height: 1.6;
+            margin-bottom: var(--atfa-space-lg);
+        }
+
+        .social-links {
+            display: flex;
+            gap: var(--atfa-space-md);
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            gap: var(--atfa-space-xs);
+            color: var(--atfa-gray-400);
+            text-decoration: none;
+            padding: var(--atfa-space-sm);
+            border-radius: var(--atfa-radius-sm);
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            color: var(--atfa-white);
+            background: var(--atfa-gray-800);
+        }
+
+        .footer-title {
+            font-weight: 700;
+            margin-bottom: var(--atfa-space-md);
+            color: var(--atfa-white);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: var(--atfa-space-sm);
+        }
+
+        .footer-links a {
+            color: var(--atfa-gray-400);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--atfa-white);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--atfa-gray-700);
+            padding-top: var(--atfa-space-lg);
+            text-align: center;
+            color: var(--atfa-gray-400);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .mission-grid {
+                grid-template-columns: 1fr;
+                gap: var(--atfa-space-xl);
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .impact-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">💰</div>
+                <span>All Teens Financial Academy (ATFA)</span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="team.html" class="nav-link">Team</a>
+                <a href="news.html" class="nav-link">News</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="https://courses.atfaacademy.org/" class="btn-earn">Start Learning</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero -->
+    <section class="about-hero">
+        <div class="container">
+            <h1 class="hero-title">Empowering Financial Futures</h1>
+            <p class="hero-subtitle">We're on a mission to provide every teenager with the financial literacy skills they need to build wealth and achieve financial freedom.</p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <div class="container">
+            <div class="mission-grid">
+                <div class="mission-content">
+                    <h2>Our Mission</h2>
+                    <p>All Teens Financial Academy (ATFA) is a 501(c)(3) nonprofit organization founded in 2020 with a simple yet powerful mission: to provide free, accessible financial literacy education to teenagers worldwide.</p>
+                    <p>We believe that financial education is not just important—it's essential. Every teenager deserves to understand how money works, how to build wealth, and how to make smart financial decisions that will set them up for lifelong success.</p>
+                    <p>Through our peer-to-peer learning approach, we make financial education engaging, relevant, and practical for today's generation.</p>
+                </div>
+                <div class="mission-visual">
+                    <div class="mission-icon">🌍</div>
+                    <span class="mission-stat">100,000+</span>
+                    <span class="mission-label">Students Worldwide</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What We Stand For</h2>
+                <p class="section-subtitle">Our core values guide everything we do</p>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">🎯</div>
+                    <h3 class="value-title">Accessibility</h3>
+                    <p class="value-description">Financial education should be free and available to every teenager, regardless of their background or circumstances.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">👥</div>
+                    <h3 class="value-title">Peer-to-Peer Learning</h3>
+                    <p class="value-description">Teens learn best from other teens. Our programs are designed and led by young people who understand the challenges and aspirations of their generation.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">💡</div>
+                    <h3 class="value-title">Practical Application</h3>
+                    <p class="value-description">We focus on real-world skills that students can immediately apply to their lives, from budgeting to investing to entrepreneurship.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">🚀</div>
+                    <h3 class="value-title">Innovation</h3>
+                    <p class="value-description">We continuously evolve our programs to meet the changing needs of modern teenagers and the financial landscape they'll inherit.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">🌟</div>
+                    <h3 class="value-title">Empowerment</h3>
+                    <p class="value-description">We believe in empowering young people to take control of their financial futures and become confident money managers.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h3 class="value-title">Community</h3>
+                    <p class="value-description">We build supportive communities where students can learn together, share experiences, and grow their financial knowledge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="impact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Global Impact</h2>
+                <p class="section-subtitle">Making a difference in the lives of teenagers worldwide</p>
+            </div>
+            
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <span class="impact-number">100,000+</span>
+                    <span class="impact-label">Students Reached</span>
+                </div>
+                
+                <div class="impact-card">
+                    <span class="impact-number">150+</span>
+                    <span class="impact-label">Countries</span>
+                </div>
+                
+                <div class="impact-card">
+                    <span class="impact-number">12</span>
+                    <span class="impact-label">Comprehensive Courses</span>
+                </div>
+                
+                <div class="impact-card">
+                    <span class="impact-number">3</span>
+                    <span class="impact-label">Legislative Testimonies</span>
+                </div>
+                
+                <div class="impact-card">
+                    <span class="impact-number">420+</span>
+                    <span class="impact-label">Media Features</span>
+                </div>
+                
+                <div class="impact-card">
+                    <span class="impact-number">2020</span>
+                    <span class="impact-label">Founded</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">💰</div>
+                        <span>All Teens Financial Academy (ATFA)</span>
+                    </div>
+                    <p class="footer-description">Empowering teenagers worldwide with essential financial literacy skills through peer-to-peer education and practical learning that leads to real wealth creation.</p>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/@atfaacademy" class="social-link" target="_blank">
+                            <span>📺</span> YouTube
+                        </a>
+                        <a href="https://www.instagram.com/atfaacademy/" class="social-link" target="_blank">
+                            <span>📸</span> Instagram
+                        </a>
+                        <a href="https://www.linkedin.com/company/all-teens-financial-academy/" class="social-link" target="_blank">
+                            <span>💼</span> LinkedIn
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Core Courses</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+BAS101+3000/about">Budgeting & Saving</a></li>
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+CR101+3000/about">Credit Mastery</a></li>
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+SM101+3000/about">Stock Market</a></li>
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+SH101+3000/about">Side Hustles</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Advanced Topics</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+CY101+3000/about">Cryptocurrency</a></li>
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+HFG101+3000/about">401(k) & IRAs</a></li>
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+TS101+3000/about">Taxes</a></li>
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+DS101+Dropshipping/about">Ecommerce</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">About ATFA</h4>
+                    <ul class="footer-links">
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="news.html">News & Press</a></li>
+                        <li><a href="https://atfaacademy.com/start-a-chapter/">Start a Chapter</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 All Teen Financial Academy (ATFA). All rights reserved. | 501(c)(3) Nonprofit Organization</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Teens Financial Academy (ATFA) | Financial Literacy Education for Teens</title>
+    <meta name="description" content="Learn financial literacy with All Teens Financial Academy. Free teen money management courses, budgeting, credit, and investing education for high school students.">
+    <meta name="keywords" content="financial literacy teens, teen money management, youth financial education, high school financial courses, budgeting for teens, credit education">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="All Teens Financial Academy (ATFA) | Financial Literacy Education for Teens">
+    <meta property="og:description" content="Learn financial literacy with All Teens Financial Academy. Free teen money management courses, budgeting, credit, and investing education for high school students.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://atfaacademy.com/">
+    <meta property="og:site_name" content="All Teens Financial Academy">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="All Teens Financial Academy (ATFA) | Financial Literacy Education for Teens">
+    <meta name="twitter:description" content="Learn financial literacy with All Teens Financial Academy. Free teen money management courses, budgeting, credit, and investing education for high school students.">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="All Teens Financial Academy">
+    <link rel="canonical" href="https://atfaacademy.com/">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "All Teens Financial Academy",
+        "alternateName": "ATFA",
+        "description": "Nonprofit organization providing financial literacy education for teenagers through peer-to-peer learning and practical courses.",
+        "url": "https://atfaacademy.com/",
+        "sameAs": [
+            "https://www.youtube.com/@atfaacademy",
+            "https://www.instagram.com/atfaacademy/",
+            "https://www.linkedin.com/company/all-teens-financial-academy/"
+        ],
+        "foundingDate": "2020",
+        "educationalCredentialAwarded": "Financial Literacy Certificate"
+    }
+    </script>
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://courses.atfaacademy.org">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💰</text></svg>">
+    
+    <!-- Unified ATFA Stylesheets -->
+    <link rel="stylesheet" href="css/atfa-unified.css">
+    
+    <!-- Expert-Level Homepage Design -->
+    <style>
+        /* Advanced Hero Design System */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, 
+                #0D1B2A 0%, 
+                #1B2951 25%, 
+                #2E4057 50%, 
+                #1B5E20 75%, 
+                #2E7D32 100%);
+            position: relative;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(255, 143, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(13, 71, 161, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(46, 125, 50, 0.05) 0%, transparent 50%);
+        }
+
+        .hero-container {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: var(--atfa-space-20);
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 var(--atfa-space-8);
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content {
+            animation: slideInLeft 1s ease-out;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 900;
+            line-height: 1.3;
+            margin-bottom: var(--atfa-space-8);
+            letter-spacing: -0.02em;
+            word-spacing: 0.1em;
+            background: linear-gradient(135deg, #FFFFFF 0%, #E8F5E8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: var(--atfa-space-10);
+            max-width: 600px;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: var(--atfa-space-8);
+            margin-bottom: var(--atfa-space-10);
+        }
+
+        .hero-stat {
+            text-align: center;
+        }
+
+        .hero-stat-number {
+            display: block;
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--atfa-secondary);
+            margin-bottom: var(--atfa-space-1);
+        }
+
+        .hero-stat-label {
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.7);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 500;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: var(--atfa-space-4);
+            flex-wrap: wrap;
+        }
+
+        .hero-cta {
+            background: linear-gradient(135deg, var(--atfa-secondary) 0%, var(--atfa-secondary-light) 100%);
+            color: var(--atfa-white);
+            padding: var(--atfa-space-4) var(--atfa-space-8);
+            border-radius: var(--atfa-radius-2xl);
+            font-weight: 700;
+            font-size: 1.125rem;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(255, 143, 0, 0.3);
+        }
+
+        .hero-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .hero-cta:hover::before {
+            left: 100%;
+        }
+
+        .hero-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(255, 143, 0, 0.4);
+        }
+
+        .hero-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--atfa-white);
+            padding: var(--atfa-space-4) var(--atfa-space-6);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--atfa-radius-2xl);
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-2px);
+        }
+
+        /* Advanced Visual Design */
+        .hero-visual {
+            position: relative;
+            height: 600px;
+            animation: slideInRight 1s ease-out 0.3s both;
+        }
+
+        .financial-ecosystem {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .central-hub {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, var(--atfa-secondary) 0%, var(--atfa-secondary-light) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-shadow: 0 20px 40px rgba(255, 143, 0, 0.3);
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        .central-hub::before {
+            content: '';
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            border: 2px solid rgba(255, 143, 0, 0.3);
+            border-radius: 50%;
+            animation: rotate 20s linear infinite;
+        }
+
+        .central-hub::after {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border: 1px solid rgba(255, 143, 0, 0.2);
+            border-radius: 50%;
+            animation: rotate 30s linear infinite reverse;
+        }
+
+        .hub-icon {
+            font-size: 4rem;
+            color: var(--atfa-white);
+        }
+
+        .orbit-item {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: var(--atfa-radius-2xl);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            animation: float 4s ease-in-out infinite;
+            color: var(--atfa-gray-800);
+        }
+
+        .orbit-item:nth-child(1) {
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            animation-delay: 0s;
+        }
+
+        .orbit-item:nth-child(2) {
+            top: 30%;
+            right: 5%;
+            animation-delay: 1s;
+        }
+
+        .orbit-item:nth-child(3) {
+            bottom: 30%;
+            right: 15%;
+            animation-delay: 2s;
+        }
+
+        .orbit-item:nth-child(4) {
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            animation-delay: 3s;
+        }
+
+        .orbit-item:nth-child(5) {
+            top: 30%;
+            left: 5%;
+            animation-delay: 4s;
+        }
+
+        .orbit-item:nth-child(6) {
+            bottom: 30%;
+            left: 15%;
+            animation-delay: 5s;
+        }
+
+        /* Make bitcoin symbol more visible */
+        .orbit-item:nth-child(5) {
+            background: rgba(255, 193, 7, 0.15);
+            border: 2px solid rgba(255, 143, 0, 0.4);
+            color: #F57C00;
+            font-weight: 700;
+        }
+
+        /* Advanced Animations */
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 20px 40px rgba(255, 143, 0, 0.3);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 25px 50px rgba(255, 143, 0, 0.4);
+            }
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        /* Advanced Responsive Design */
+        @media (max-width: 1400px) {
+            .hero-container {
+                max-width: 1200px;
+                gap: var(--atfa-space-16);
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .hero {
+                min-height: 90vh;
+                padding: var(--atfa-space-12) 0;
+            }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: var(--atfa-space-16);
+                padding: 0 var(--atfa-space-6);
+            }
+
+            .hero-title {
+                font-size: clamp(2.2rem, 6vw, 3.5rem);
+                line-height: 1.2;
+                margin-bottom: var(--atfa-space-6);
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+                max-width: 500px;
+                margin: 0 auto var(--atfa-space-8);
+            }
+
+            .hero-visual {
+                height: 350px;
+                order: -1;
+            }
+
+            .central-hub {
+                width: 140px;
+                height: 140px;
+            }
+
+            .hub-icon {
+                font-size: 2.5rem;
+            }
+
+            .orbit-item {
+                width: 70px;
+                height: 70px;
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                min-height: 100vh;
+                padding: var(--atfa-space-8) 0;
+            }
+
+            .hero-container {
+                padding: 0 var(--atfa-space-4);
+                gap: var(--atfa-space-12);
+            }
+
+            .hero-title {
+                font-size: clamp(2rem, 8vw, 2.8rem);
+                line-height: 1.25;
+                margin-bottom: var(--atfa-space-6);
+                word-spacing: 0.05em;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+                line-height: 1.5;
+                margin-bottom: var(--atfa-space-8);
+                max-width: 400px;
+            }
+
+            .hero-stats {
+                flex-direction: row;
+                justify-content: space-between;
+                gap: var(--atfa-space-2);
+                margin-bottom: var(--atfa-space-8);
+            }
+
+            .hero-stat {
+                flex: 1;
+                min-width: 0;
+            }
+
+            .hero-stat-number {
+                font-size: 1.5rem;
+                margin-bottom: var(--atfa-space-1);
+            }
+
+            .hero-stat-label {
+                font-size: 0.75rem;
+                line-height: 1.2;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: var(--atfa-space-4);
+                width: 100%;
+            }
+
+            .hero-cta {
+                width: 100%;
+                max-width: 280px;
+                padding: var(--atfa-space-4) var(--atfa-space-6);
+                font-size: 1rem;
+            }
+
+            .hero-secondary {
+                width: 100%;
+                max-width: 280px;
+                padding: var(--atfa-space-3) var(--atfa-space-6);
+            }
+
+            .hero-visual {
+                height: 280px;
+            }
+
+            .central-hub {
+                width: 100px;
+                height: 100px;
+            }
+
+            .central-hub::before {
+                width: 140px;
+                height: 140px;
+            }
+
+            .central-hub::after {
+                width: 180px;
+                height: 180px;
+            }
+
+            .hub-icon {
+                font-size: 2rem;
+            }
+
+            .orbit-item {
+                width: 50px;
+                height: 50px;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-container {
+                padding: 0 var(--atfa-space-3);
+            }
+
+            .hero-title {
+                font-size: clamp(1.8rem, 9vw, 2.5rem);
+                line-height: 1.3;
+                margin-bottom: var(--atfa-space-5);
+            }
+
+            .hero-subtitle {
+                font-size: 0.95rem;
+                line-height: 1.4;
+                margin-bottom: var(--atfa-space-6);
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: var(--atfa-space-3);
+                margin-bottom: var(--atfa-space-6);
+            }
+
+            .hero-stat-number {
+                font-size: 1.3rem;
+            }
+
+            .hero-stat-label {
+                font-size: 0.7rem;
+            }
+
+            .hero-cta,
+            .hero-secondary {
+                max-width: 100%;
+                padding: var(--atfa-space-4) var(--atfa-space-5);
+            }
+
+            .hero-visual {
+                height: 220px;
+            }
+
+            .central-hub {
+                width: 80px;
+                height: 80px;
+            }
+
+            .central-hub::before {
+                width: 110px;
+                height: 110px;
+            }
+
+            .central-hub::after {
+                width: 140px;
+                height: 140px;
+            }
+
+            .hub-icon {
+                font-size: 1.5rem;
+            }
+
+            .orbit-item {
+                width: 40px;
+                height: 40px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Modern Course Grid */
+        .courses {
+            padding: var(--atfa-space-24) 0;
+            background: linear-gradient(180deg, var(--atfa-white) 0%, var(--atfa-gray-50) 100%);
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--atfa-space-8);
+            margin-top: var(--atfa-space-12);
+        }
+
+        /* Mobile Course Grid Optimization */
+        @media (max-width: 768px) {
+            .courses {
+                padding: var(--atfa-space-16) 0;
+            }
+
+            .courses-grid {
+                grid-template-columns: 1fr;
+                gap: var(--atfa-space-6);
+                margin-top: var(--atfa-space-8);
+            }
+
+            .course-card {
+                padding: var(--atfa-space-6);
+                border-radius: var(--atfa-radius-2xl);
+            }
+
+            .course-icon {
+                font-size: 2.5rem;
+                margin-bottom: var(--atfa-space-4);
+            }
+
+            .course-title {
+                font-size: 1.3rem;
+                margin-bottom: var(--atfa-space-3);
+            }
+
+            .course-description {
+                font-size: 0.95rem;
+                margin-bottom: var(--atfa-space-4);
+            }
+
+            .course-features {
+                margin-bottom: var(--atfa-space-6);
+            }
+
+            .feature {
+                font-size: 0.8rem;
+                padding: var(--atfa-space-1) var(--atfa-space-2);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .courses-grid {
+                gap: var(--atfa-space-4);
+            }
+
+            .course-card {
+                padding: var(--atfa-space-5);
+            }
+        }
+
+        .course-card {
+            background: var(--atfa-white);
+            border-radius: var(--atfa-radius-3xl);
+            padding: var(--atfa-space-8);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--atfa-gray-200);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .course-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(27, 94, 32, 0.03), transparent);
+            transition: left 0.6s;
+        }
+
+        .course-card:hover::before {
+            left: 100%;
+        }
+
+        .course-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+            border-color: var(--atfa-primary);
+        }
+
+        .course-icon {
+            font-size: 3rem;
+            margin-bottom: var(--atfa-space-6);
+            display: block;
+        }
+
+        .course-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--atfa-gray-900);
+            margin-bottom: var(--atfa-space-4);
+        }
+
+        .course-description {
+            color: var(--atfa-gray-600);
+            line-height: 1.6;
+            margin-bottom: var(--atfa-space-6);
+        }
+
+        .course-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--atfa-space-2);
+            margin-bottom: var(--atfa-space-8);
+        }
+
+        .feature {
+            background: var(--atfa-gray-100);
+            color: var(--atfa-gray-700);
+            padding: var(--atfa-space-1) var(--atfa-space-3);
+            border-radius: var(--atfa-radius-full);
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .course-btn {
+            background: var(--atfa-gradient-primary);
+            color: var(--atfa-white);
+            padding: var(--atfa-space-3) var(--atfa-space-6);
+            border-radius: var(--atfa-radius-xl);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
+
+        .course-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(27, 94, 32, 0.3);
+        }
+
+        /* Expert Utility Classes */
+        .bg-gradient-to-b {
+            background: linear-gradient(to bottom, var(--atfa-gray-900), var(--atfa-gray-800));
+        }
+
+        .from-gray-900 {
+            --tw-gradient-from: var(--atfa-gray-900);
+        }
+
+        .to-gray-800 {
+            --tw-gradient-to: var(--atfa-gray-800);
+        }
+
+        .text-secondary {
+            color: var(--atfa-secondary);
+        }
+
+        .text-gray-300 {
+            color: var(--atfa-gray-300);
+        }
+
+        .max-w-3xl {
+            max-width: 48rem;
+        }
+
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Professional Desktop Dropdown */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: var(--atfa-white);
+            min-width: 280px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            border-radius: var(--atfa-radius-xl);
+            z-index: 1000;
+            border: 1px solid var(--atfa-gray-200);
+            padding: var(--atfa-space-4);
+            margin-top: var(--atfa-space-2);
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(20px);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: var(--atfa-space-3) var(--atfa-space-4);
+            color: var(--atfa-gray-700);
+            text-decoration: none;
+            border-radius: var(--atfa-radius-lg);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+            margin-bottom: var(--atfa-space-1);
+        }
+
+        .dropdown-content a:last-child {
+            margin-bottom: 0;
+        }
+
+        .dropdown-content a:hover {
+            background: var(--atfa-primary);
+            color: var(--atfa-white);
+            transform: translateX(4px);
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: var(--atfa-space-2);
+        }
+
+        .dropdown-arrow {
+            font-size: 0.8rem;
+            transition: transform 0.3s ease;
+        }
+
+        .dropdown:hover .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+
+        /* Hide hamburger on desktop */
+        .hamburger {
+            display: none;
+        }
+
+        /* Desktop Dropdown Enhancements */
+        @media (min-width: 769px) {
+            .dropdown-content {
+                /* Professional enterprise-style dropdown */
+                background: rgba(255, 255, 255, 0.98);
+                backdrop-filter: blur(30px);
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                box-shadow: 
+                    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+                    0 10px 10px -5px rgba(0, 0, 0, 0.04),
+                    0 0 0 1px rgba(255, 255, 255, 0.05);
+            }
+
+            .dropdown-content::before {
+                content: '';
+                position: absolute;
+                top: -6px;
+                left: 20px;
+                width: 12px;
+                height: 12px;
+                background: var(--atfa-white);
+                border: 1px solid var(--atfa-gray-200);
+                border-bottom: none;
+                border-right: none;
+                transform: rotate(45deg);
+            }
+
+            .dropdown-content a {
+                position: relative;
+                overflow: hidden;
+            }
+
+            .dropdown-content a::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, rgba(27, 94, 32, 0.1), transparent);
+                transition: left 0.5s;
+            }
+
+            .dropdown-content a:hover::before {
+                left: 100%;
+            }
+
+            /* Improved hover timing */
+            .dropdown:hover .dropdown-content {
+                animation: dropdownFadeIn 0.3s ease forwards;
+            }
+
+            @keyframes dropdownFadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(-10px);
+                    visibility: hidden;
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                    visibility: visible;
+                }
+            }
+
+            /* Keep dropdown open briefly when mouse leaves */
+            .dropdown-content:hover {
+                display: block;
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile Navigation Optimization */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 var(--atfa-space-4);
+            }
+
+            .nav-logo {
+                font-size: 1.2rem;
+            }
+
+            .logo-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 80px;
+                flex-direction: column;
+                background: rgba(255, 255, 255, 0.98);
+                backdrop-filter: blur(20px);
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+                padding: var(--atfa-space-8) 0;
+                z-index: 1000;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .nav-link {
+                padding: var(--atfa-space-4) var(--atfa-space-6);
+                display: block;
+                margin: var(--atfa-space-2) 0;
+                font-size: 1.1rem;
+            }
+
+            .dropdown {
+                position: relative;
+            }
+
+            .dropdown-content {
+                position: static;
+                display: none;
+                background: var(--atfa-gray-50);
+                box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+                border-radius: var(--atfa-radius-lg);
+                margin: var(--atfa-space-3) var(--atfa-space-4);
+                padding: var(--atfa-space-3);
+                border: 1px solid var(--atfa-gray-200);
+                opacity: 0;
+                max-height: 0;
+                overflow: hidden;
+                transition: all 0.3s ease;
+            }
+
+            .dropdown.active .dropdown-content {
+                display: block;
+                opacity: 1;
+                max-height: 500px;
+            }
+
+            .dropdown-content a {
+                display: block;
+                padding: var(--atfa-space-2) var(--atfa-space-3);
+                color: var(--atfa-gray-700);
+                text-decoration: none;
+                border-radius: var(--atfa-radius-md);
+                font-weight: 500;
+                font-size: 0.9rem;
+                transition: all 0.2s ease;
+                margin-bottom: var(--atfa-space-1);
+            }
+
+            .dropdown-content a:hover {
+                background: var(--atfa-primary);
+                color: var(--atfa-white);
+            }
+
+            .dropdown .nav-link {
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            .dropdown-arrow {
+                transition: transform 0.3s ease;
+            }
+
+            .dropdown.active .dropdown-arrow {
+                transform: rotate(180deg);
+            }
+
+            .hamburger {
+                display: block;
+                cursor: pointer;
+                padding: var(--atfa-space-2);
+            }
+
+            .hamburger .bar {
+                display: block;
+                width: 25px;
+                height: 3px;
+                margin: 5px auto;
+                transition: 0.3s;
+                background-color: var(--atfa-gray-700);
+                border-radius: 2px;
+            }
+
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+
+            .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        }
+
+        /* Mobile Impact Section */
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: var(--atfa-space-6);
+            }
+
+            .stat-item {
+                padding: var(--atfa-space-6);
+            }
+
+            .stat-number {
+                font-size: 2.5rem;
+            }
+
+            .stat-label {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: var(--atfa-space-4);
+            }
+
+            .stat-item {
+                padding: var(--atfa-space-4);
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            .stat-label {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">💰</div>
+                <span>All Teens Financial Academy (ATFA)</span>
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Courses <span class="dropdown-arrow">▼</span></a>
+                    <div class="dropdown-content">
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+BAS101+3000/about">Budgeting & Saving</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+CR101+3000/about">Credit</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+SM101+3000/about">Stock Market</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+SH101+3000/about">Side Hustles</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+CN101+3000/about">College Navigation</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+CY101+3000/about">Cryptocurrency</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+FM101+3000/about">Financial Mindset</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+JA102+3000/about">Job Applications</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+TS101+3000/about">Taxes</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+HFG101+3000/about">401(k) & Roth IRAs</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+DS101+Dropshipping/about">Ecommerce</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+INFO+3000/about">Guest Speakers</a>
+                    </div>
+                </div>
+                <a href="team.html" class="nav-link">Team</a>
+                <a href="news.html" class="nav-link">News</a>
+                <a href="https://atfaacademy.com/contact/" class="nav-link">Contact</a>
+                <a href="https://courses.atfaacademy.org/" class="btn btn-earn">Start Learning</a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Expert-Level Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Transform Your<br>Financial Future</h1>
+                <p class="hero-subtitle">Join the global movement of financially empowered teens. Master money management, investing, and wealth-building through expert-designed courses that actually work in the real world.</p>
+                
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">100K+</span>
+                        <span class="hero-stat-label">Students Empowered</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">150+</span>
+                        <span class="hero-stat-label">Countries Reached</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">12</span>
+                        <span class="hero-stat-label">Expert Courses</span>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="https://courses.atfaacademy.org/" class="hero-cta">Start Your Financial Journey</a>
+                    <a href="https://atfaacademy.com/start-a-chapter/" class="hero-secondary">Start a Chapter</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="financial-ecosystem">
+                    <div class="central-hub">
+                        <div class="hub-icon">💰</div>
+                    </div>
+                    <div class="orbit-item">📊</div>
+                    <div class="orbit-item">💳</div>
+                    <div class="orbit-item">📈</div>
+                    <div class="orbit-item">🏦</div>
+                    <div class="orbit-item">₿</div>
+                    <div class="orbit-item">🎯</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expert Courses Section -->
+    <section class="courses" id="courses">
+        <div class="container">
+            <div class="section-header text-center m-12">
+                <h2 class="text-5xl font-extrabold text-gray-900 m-6">Master Every Aspect of Money</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">From teenagers to teenagers - expert-crafted courses that teach real financial skills used by millionaires and successful entrepreneurs worldwide.</p>
+            </div>
+            
+            <div class="courses-grid">
+                <!-- Core Financial Courses -->
+                <div class="course-card">
+                    <div class="course-icon">💰</div>
+                    <h3 class="course-title">Budgeting & Saving</h3>
+                    <p class="course-description">Master the fundamentals of personal budgeting, smart saving strategies, and financial goal setting that actually work.</p>
+                    <div class="course-features">
+                        <span class="feature">Budget Templates</span>
+                        <span class="feature">Saving Challenges</span>
+                        <span class="feature">Goal Tracking</span>
+                    </div>
+                    <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+BAS101+3000/about" class="course-btn">Start Learning</a>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-icon">💳</div>
+                    <h3 class="course-title">Credit Mastery</h3>
+                    <p class="course-description">Understand credit scores, credit cards, loans, and how to build excellent credit from day one.</p>
+                    <div class="course-features">
+                        <span class="feature">Credit Simulation</span>
+                        <span class="feature">Score Building</span>
+                        <span class="feature">Debt Management</span>
+                    </div>
+                    <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+CR101+3000/about" class="course-btn">Start Learning</a>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-icon">📈</div>
+                    <h3 class="course-title">Stock Market & Investing</h3>
+                    <p class="course-description">Learn investing basics, market analysis, and build a foundation for long-term wealth creation.</p>
+                    <div class="course-features">
+                        <span class="feature">Market Simulator</span>
+                        <span class="feature">Portfolio Building</span>
+                        <span class="feature">Risk Management</span>
+                    </div>
+                    <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+SM101+3000/about" class="course-btn">Start Learning</a>
+                </div>
+
+                <!-- Income & Career Courses -->
+                <div class="course-card">
+                    <div class="course-icon">🚀</div>
+                    <h3 class="course-title">Side Hustles</h3>
+                    <p class="course-description">Discover legitimate ways to earn money as a teen and build entrepreneurial skills for the future.</p>
+                    <div class="course-features">
+                        <span class="feature">Income Ideas</span>
+                        <span class="feature">Business Planning</span>
+                        <span class="feature">Online Opportunities</span>
+                    </div>
+                    <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+SH101+3000/about" class="course-btn">Start Learning</a>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-icon">📝</div>
+                    <h3 class="course-title">Job Applications</h3>
+                    <p class="course-description">Master resumes, cover letters, interviews, and salary negotiation to land your dream job.</p>
+                    <div class="course-features">
+                        <span class="feature">Resume Builder</span>
+                        <span class="feature">Interview Prep</span>
+                        <span class="feature">Salary Tips</span>
+                    </div>
+                    <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+JA102+3000/about" class="course-btn">Start Learning</a>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-icon">🛒</div>
+                    <h3 class="course-title">Ecommerce & Dropshipping</h3>
+                    <p class="course-description">Learn how to start and run an online business, from product selection to customer service.</p>
+                    <div class="course-features">
+                        <span class="feature">Store Setup</span>
+                        <span class="feature">Marketing</span>
+                        <span class="feature">Profit Optimization</span>
+                    </div>
+                    <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+DS101+Dropshipping/about" class="course-btn">Start Learning</a>
+                </div>
+
+                <!-- Advanced Topics -->
+                <div class="course-card">
+                    <div class="course-icon">₿</div>
+                    <h3 class="course-title">Cryptocurrency</h3>
+                    <p class="course-description">Understand digital currencies, blockchain technology, and how to safely invest in crypto.</p>
+                    <div class="course-features">
+                        <span class="feature">Blockchain Basics</span>
+                        <span class="feature">Safe Trading</span>
+                        <span class="feature">DeFi Introduction</span>
+                    </div>
+                    <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+CY101+3000/about" class="course-btn">Start Learning</a>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-icon">🏦</div>
+                    <h3 class="course-title">401(k) & Roth IRAs</h3>
+                    <p class="course-description">Master retirement planning early with comprehensive coverage of 401(k)s, IRAs, and long-term investing.</p>
+                    <div class="course-features">
+                        <span class="feature">Retirement Planning</span>
+                        <span class="feature">Tax Advantages</span>
+                        <span class="feature">Compound Interest</span>
+                    </div>
+                    <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+HFG101+3000/about" class="course-btn">Start Learning</a>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-icon">📊</div>
+                    <h3 class="course-title">Taxes</h3>
+                    <p class="course-description">Learn how taxes work, how to file your first tax return, and strategies to minimize tax burden.</p>
+                    <div class="course-features">
+                        <span class="feature">Tax Basics</span>
+                        <span class="feature">Filing Process</span>
+                        <span class="feature">Deduction Strategies</span>
+                    </div>
+                    <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+TS101+3000/about" class="course-btn">Start Learning</a>
+                </div>
+
+                <!-- Life Skills -->
+                <div class="course-card">
+                    <div class="course-icon">🎓</div>
+                    <h3 class="course-title">College Navigation</h3>
+                    <p class="course-description">Navigate college costs, student loans, scholarships, and make smart decisions about higher education.</p>
+                    <div class="course-features">
+                        <span class="feature">Cost Analysis</span>
+                        <span class="feature">Scholarship Search</span>
+                        <span class="feature">Loan Management</span>
+                    </div>
+                    <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+CN101+3000/about" class="course-btn">Start Learning</a>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-icon">🧠</div>
+                    <h3 class="course-title">Financial Mindset</h3>
+                    <p class="course-description">Develop the psychology of wealth, overcome money fears, and build healthy financial habits.</p>
+                    <div class="course-features">
+                        <span class="feature">Money Psychology</span>
+                        <span class="feature">Habit Building</span>
+                        <span class="feature">Goal Setting</span>
+                    </div>
+                    <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+FM101+3000/about" class="course-btn">Start Learning</a>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-icon">🎤</div>
+                    <h3 class="course-title">Guest Speakers</h3>
+                    <p class="course-description">Learn from successful entrepreneurs, investors, and financial experts through exclusive interviews and sessions.</p>
+                    <div class="course-features">
+                        <span class="feature">Expert Interviews</span>
+                        <span class="feature">Real Stories</span>
+                        <span class="feature">Q&A Sessions</span>
+                    </div>
+                    <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+INFO+3000/about" class="course-btn">Start Learning</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expert Impact Section -->
+    <section class="section bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+        <div class="container">
+            <div class="section-header text-center m-12">
+                <h2 class="text-5xl font-extrabold text-white m-6">Changing Lives Worldwide</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Real impact, real results. We're not just teaching financial literacy - we're creating the next generation of wealth builders and financially independent leaders.</p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-item text-center p-8">
+                    <div class="text-6xl m-4">🌍</div>
+                    <span class="stat-number text-4xl font-black text-secondary m-2">100,000+</span>
+                    <span class="stat-label text-gray-300 text-lg font-medium">Students Empowered Globally</span>
+                </div>
+                
+                <div class="stat-item text-center p-8">
+                    <div class="text-6xl m-4">🏛️</div>
+                    <span class="stat-number text-4xl font-black text-secondary m-2">3</span>
+                    <span class="stat-label text-gray-300 text-lg font-medium">Legislative Testimonies</span>
+                </div>
+                
+                <div class="stat-item text-center p-8">
+                    <div class="text-6xl m-4">🎯</div>
+                    <span class="stat-number text-4xl font-black text-secondary m-2">150+</span>
+                    <span class="stat-label text-gray-300 text-lg font-medium">Countries Reached</span>
+                </div>
+                
+                <div class="stat-item text-center p-8">
+                    <div class="text-6xl m-4">📚</div>
+                    <span class="stat-number text-4xl font-black text-secondary m-2">12</span>
+                    <span class="stat-label text-gray-300 text-lg font-medium">Expert-Level Courses</span>
+                </div>
+                
+                <div class="stat-item text-center p-8">
+                    <div class="text-6xl m-4">🏆</div>
+                    <span class="stat-number text-4xl font-black text-secondary m-2">420+</span>
+                    <span class="stat-label text-gray-300 text-lg font-medium">Media Features</span>
+                </div>
+                
+                <div class="stat-item text-center p-8">
+                    <div class="text-6xl m-4">💡</div>
+                    <span class="stat-number text-4xl font-black text-secondary m-2">2020</span>
+                    <span class="stat-label text-gray-300 text-lg font-medium">Year Founded</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">💰</div>
+                        <span>All Teens Financial Academy (ATFA)</span>
+                    </div>
+                    <p class="footer-description">Empowering teenagers worldwide with essential financial literacy skills through peer-to-peer education and practical learning that leads to real wealth creation.</p>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/@atfaacademy" class="social-link" target="_blank">
+                            <span>📺</span> YouTube
+                        </a>
+                        <a href="https://www.instagram.com/atfaacademy/" class="social-link" target="_blank">
+                            <span>📸</span> Instagram
+                        </a>
+                        <a href="https://www.linkedin.com/company/all-teens-financial-academy/" class="social-link" target="_blank">
+                            <span>💼</span> LinkedIn
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Core Courses</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+BAS101+3000/about">Budgeting & Saving</a></li>
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+CR101+3000/about">Credit Mastery</a></li>
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+SM101+3000/about">Stock Market</a></li>
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+SH101+3000/about">Side Hustles</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Advanced Topics</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+CY101+3000/about">Cryptocurrency</a></li>
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+HFG101+3000/about">401(k) & IRAs</a></li>
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+TS101+3000/about">Taxes</a></li>
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+DS101+Dropshipping/about">Ecommerce</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">About ATFA</h4>
+                    <ul class="footer-links">
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="news.html">News & Press</a></li>
+                        <li><a href="https://atfaacademy.com/start-a-chapter/">Start a Chapter</a></li>
+                        <li><a href="https://atfaacademy.com/contact/">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 All Teen Financial Academy (ATFA). All rights reserved. | 501(c)(3) Nonprofit Organization</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Navigation functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('nav-menu');
+            const navbar = document.getElementById('navbar');
+
+            // Mobile menu toggle
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+                
+                // Prevent body scroll when menu is open
+                if (navMenu.classList.contains('active')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                }
+            });
+
+            // Enhanced dropdown functionality for mobile and desktop
+            const dropdowns = document.querySelectorAll('.dropdown');
+            
+            dropdowns.forEach(dropdown => {
+                const dropdownToggle = dropdown.querySelector('.nav-link');
+                const dropdownContent = dropdown.querySelector('.dropdown-content');
+                
+                // Mobile dropdown toggle
+                dropdownToggle.addEventListener('click', function(e) {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        
+                        // Close other dropdowns
+                        dropdowns.forEach(otherDropdown => {
+                            if (otherDropdown !== dropdown) {
+                                otherDropdown.classList.remove('active');
+                            }
+                        });
+                        
+                        // Toggle current dropdown
+                        dropdown.classList.toggle('active');
+                    }
+                });
+                
+                // Desktop hover behavior enhancement
+                if (window.innerWidth > 768) {
+                    let hoverTimeout;
+                    
+                    dropdown.addEventListener('mouseenter', function() {
+                        clearTimeout(hoverTimeout);
+                        dropdown.classList.add('hover');
+                    });
+                    
+                    dropdown.addEventListener('mouseleave', function() {
+                        hoverTimeout = setTimeout(() => {
+                            dropdown.classList.remove('hover');
+                        }, 300); // Brief delay for better UX
+                    });
+                }
+            });
+
+            // Close mobile menu when clicking on a link
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    // Don't close if it's a dropdown toggle
+                    if (!link.parentElement.classList.contains('dropdown')) {
+                        hamburger.classList.remove('active');
+                        navMenu.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                });
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+
+            // Handle window resize
+            window.addEventListener('resize', function() {
+                if (window.innerWidth > 768) {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                    dropdowns.forEach(dropdown => {
+                        dropdown.classList.remove('active');
+                    });
+                }
+            });
+
+            // Navbar scroll effect
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 100) {
+                    navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+                    navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
+                } else {
+                    navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                    navbar.style.boxShadow = 'none';
+                }
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Counter animation
+            const observerOptions = {
+                threshold: 0.5,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = entry.target;
+                        const finalValue = target.textContent;
+                        const numericValue = parseInt(finalValue.replace(/[^\d]/g, ''));
+                        
+                        if (numericValue) {
+                            animateCounter(target, 0, numericValue, finalValue);
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.stat-number, .impact-number').forEach(stat => {
+                observer.observe(stat);
+            });
+
+            function animateCounter(element, start, end, originalText) {
+                const duration = 2000;
+                const startTime = performance.now();
+                
+                function updateCounter(currentTime) {
+                    const elapsed = currentTime - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    const easeOut = 1 - Math.pow(1 - progress, 3);
+                    const current = Math.floor(start + (end - start) * easeOut);
+                    
+                    element.textContent = originalText.replace(/[\d,]+/, current.toLocaleString());
+                    
+                    if (progress < 1) {
+                        requestAnimationFrame(updateCounter);
+                    }
+                }
+                
+                requestAnimationFrame(updateCounter);
+            }
+        });
+    </script>
+</body>
+</html>

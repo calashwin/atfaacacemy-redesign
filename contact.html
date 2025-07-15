@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | All Teens Financial Academy - Get in Touch</title>
+    <meta name="description" content="Contact All Teens Financial Academy for partnerships, questions, or to get involved in our financial literacy mission.">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💰</text></svg>">
+    
+    <!-- Stylesheets -->
+    <style>
+        /* Import the same design system */
+        :root {
+            --atfa-primary: #1B5E20;
+            --atfa-primary-light: #2E7D32;
+            --atfa-secondary: #FF8F00;
+            --atfa-secondary-light: #FFA726;
+            --atfa-accent: #0D47A1;
+            --atfa-accent-light: #1976D2;
+            --atfa-white: #FFFFFF;
+            --atfa-light: #F8F9FA;
+            --atfa-gray-100: #F5F5F5;
+            --atfa-gray-200: #EEEEEE;
+            --atfa-gray-300: #E0E0E0;
+            --atfa-gray-400: #BDBDBD;
+            --atfa-gray-500: #9E9E9E;
+            --atfa-gray-600: #757575;
+            --atfa-gray-700: #616161;
+            --atfa-gray-800: #424242;
+            --atfa-gray-900: #212121;
+            --atfa-font-heading: 'Poppins', sans-serif;
+            --atfa-font-body: 'Inter', sans-serif;
+            --atfa-space-xs: 0.5rem;
+            --atfa-space-sm: 1rem;
+            --atfa-space-md: 1.5rem;
+            --atfa-space-lg: 2rem;
+            --atfa-space-xl: 3rem;
+            --atfa-space-2xl: 4rem;
+            --atfa-space-3xl: 6rem;
+            --atfa-radius-sm: 8px;
+            --atfa-radius-md: 12px;
+            --atfa-radius-lg: 16px;
+            --atfa-radius-xl: 24px;
+            --atfa-shadow-sm: 0 2px 4px rgba(0,0,0,0.06);
+            --atfa-shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+            --atfa-shadow-lg: 0 8px 24px rgba(0,0,0,0.12);
+            --atfa-shadow-xl: 0 16px 40px rgba(0,0,0,0.16);
+            --atfa-gradient-primary: linear-gradient(135deg, var(--atfa-primary) 0%, var(--atfa-primary-light) 100%);
+            --atfa-gradient-secondary: linear-gradient(135deg, var(--atfa-secondary) 0%, var(--atfa-secondary-light) 100%);
+            --atfa-gradient-hero: linear-gradient(135deg, var(--atfa-primary) 0%, var(--atfa-accent) 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--atfa-font-body);
+            line-height: 1.6;
+            color: var(--atfa-gray-800);
+            background-color: var(--atfa-white);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--atfa-space-sm);
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--atfa-gray-200);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--atfa-space-sm);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: var(--atfa-space-sm);
+            font-family: var(--atfa-font-heading);
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: var(--atfa-primary);
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--atfa-gradient-primary);
+            border-radius: var(--atfa-radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: var(--atfa-shadow-md);
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: var(--atfa-space-lg);
+        }
+
+        .nav-link {
+            color: var(--atfa-gray-700);
+            text-decoration: none;
+            font-weight: 500;
+            padding: var(--atfa-space-xs) var(--atfa-space-sm);
+            border-radius: var(--atfa-radius-sm);
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--atfa-primary);
+            background: var(--atfa-gray-100);
+        }
+
+        .btn-earn {
+            background: var(--atfa-gradient-secondary);
+            color: var(--atfa-white);
+            padding: var(--atfa-space-md) var(--atfa-space-xl);
+            border-radius: var(--atfa-radius-md);
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-earn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--atfa-shadow-lg);
+        }
+
+        /* Contact Hero */
+        .contact-hero {
+            padding: 120px 0 80px;
+            background: var(--atfa-gradient-hero);
+            color: var(--atfa-white);
+            text-align: center;
+        }
+
+        .hero-title {
+            font-family: var(--atfa-font-heading);
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: var(--atfa-space-lg);
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Contact Content */
+        .contact-content {
+            padding: var(--atfa-space-3xl) 0;
+            background: var(--atfa-white);
+        }
+
+        .contact-info-centered {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--atfa-space-3xl);
+            align-items: start;
+        }
+
+        .contact-info {
+            background: var(--atfa-light);
+            padding: var(--atfa-space-xl);
+            border-radius: var(--atfa-radius-xl);
+        }
+
+        .contact-info h2 {
+            font-family: var(--atfa-font-heading);
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--atfa-gray-900);
+            margin-bottom: var(--atfa-space-lg);
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: var(--atfa-space-md);
+            margin-bottom: var(--atfa-space-lg);
+            padding: var(--atfa-space-md);
+            background: var(--atfa-white);
+            border-radius: var(--atfa-radius-md);
+            box-shadow: var(--atfa-shadow-sm);
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--atfa-gradient-primary);
+            border-radius: var(--atfa-radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--atfa-white);
+        }
+
+        .contact-details h3 {
+            font-family: var(--atfa-font-heading);
+            font-weight: 600;
+            color: var(--atfa-gray-900);
+            margin-bottom: var(--atfa-space-xs);
+        }
+
+        .contact-details p {
+            color: var(--atfa-gray-600);
+        }
+
+        .contact-details a {
+            color: var(--atfa-primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: var(--atfa-white);
+            padding: var(--atfa-space-xl);
+            border-radius: var(--atfa-radius-xl);
+            box-shadow: var(--atfa-shadow-md);
+        }
+
+        .contact-form h2 {
+            font-family: var(--atfa-font-heading);
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--atfa-gray-900);
+            margin-bottom: var(--atfa-space-lg);
+        }
+
+        .form-group {
+            margin-bottom: var(--atfa-space-lg);
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: var(--atfa-gray-800);
+            margin-bottom: var(--atfa-space-xs);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: var(--atfa-space-md);
+            border: 2px solid var(--atfa-gray-200);
+            border-radius: var(--atfa-radius-md);
+            font-family: var(--atfa-font-body);
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--atfa-primary);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            background: var(--atfa-gradient-primary);
+            color: var(--atfa-white);
+            padding: var(--atfa-space-md) var(--atfa-space-xl);
+            border: none;
+            border-radius: var(--atfa-radius-md);
+            font-family: var(--atfa-font-heading);
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--atfa-shadow-lg);
+        }
+
+        /* Support Section */
+        .support-section {
+            padding: var(--atfa-space-3xl) 0;
+            background: var(--atfa-light);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--atfa-space-3xl);
+        }
+
+        .section-title {
+            font-family: var(--atfa-font-heading);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--atfa-gray-900);
+            margin-bottom: var(--atfa-space-md);
+        }
+
+        .section-subtitle {
+            font-size: 1.25rem;
+            color: var(--atfa-gray-600);
+        }
+
+        .support-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--atfa-space-xl);
+        }
+
+        .support-card {
+            background: var(--atfa-white);
+            padding: var(--atfa-space-xl);
+            border-radius: var(--atfa-radius-xl);
+            box-shadow: var(--atfa-shadow-md);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .support-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--atfa-shadow-lg);
+        }
+
+        .support-icon {
+            font-size: 3rem;
+            margin-bottom: var(--atfa-space-md);
+        }
+
+        .support-title {
+            font-family: var(--atfa-font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--atfa-gray-900);
+            margin-bottom: var(--atfa-space-md);
+        }
+
+        .support-description {
+            color: var(--atfa-gray-600);
+            margin-bottom: var(--atfa-space-lg);
+        }
+
+        .support-btn {
+            background: var(--atfa-gradient-secondary);
+            color: var(--atfa-white);
+            padding: var(--atfa-space-sm) var(--atfa-space-lg);
+            border-radius: var(--atfa-radius-md);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .support-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--atfa-shadow-md);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--atfa-gray-900);
+            color: var(--atfa-white);
+            padding: var(--atfa-space-3xl) 0 var(--atfa-space-xl);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: var(--atfa-space-xl);
+            margin-bottom: var(--atfa-space-xl);
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: var(--atfa-space-sm);
+            font-family: var(--atfa-font-heading);
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin-bottom: var(--atfa-space-md);
+        }
+
+        .footer-description {
+            color: var(--atfa-gray-400);
+            line-height: 1.6;
+            margin-bottom: var(--atfa-space-lg);
+        }
+
+        .social-links {
+            display: flex;
+            gap: var(--atfa-space-md);
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            gap: var(--atfa-space-xs);
+            color: var(--atfa-gray-400);
+            text-decoration: none;
+            padding: var(--atfa-space-sm);
+            border-radius: var(--atfa-radius-sm);
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            color: var(--atfa-white);
+            background: var(--atfa-gray-800);
+        }
+
+        .footer-title {
+            font-weight: 700;
+            margin-bottom: var(--atfa-space-md);
+            color: var(--atfa-white);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: var(--atfa-space-sm);
+        }
+
+        .footer-links a {
+            color: var(--atfa-gray-400);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--atfa-white);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--atfa-gray-700);
+            padding-top: var(--atfa-space-lg);
+            text-align: center;
+            color: var(--atfa-gray-400);
+        }
+
+        /* Professional Donation Section Styling */
+        .donation-section {
+            margin-top: var(--atfa-space-3xl);
+            padding-top: var(--atfa-space-3xl);
+            border-top: 1px solid var(--atfa-gray-200);
+        }
+
+        .donation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: var(--atfa-space-xl);
+            margin-bottom: var(--atfa-space-xl);
+        }
+
+        .donation-card {
+            background: var(--atfa-white);
+            border-radius: var(--atfa-radius-xl);
+            box-shadow: var(--atfa-shadow-lg);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 1px solid var(--atfa-gray-200);
+        }
+
+        .donation-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--atfa-shadow-xl);
+        }
+
+        /* GoFundMe Card Specific */
+        .gofundme-card {
+            border-top: 4px solid #00D775;
+        }
+
+        .gofundme-card .donation-header {
+            background: linear-gradient(135deg, #00D775 0%, #00B366 100%);
+            color: var(--atfa-white);
+            padding: var(--atfa-space-md);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .atfa-logo {
+            display: flex;
+            align-items: center;
+            gap: var(--atfa-space-sm);
+            font-weight: 700;
+        }
+
+        .atfa-logo .logo-icon {
+            width: 32px;
+            height: 32px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: var(--atfa-radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        .gofundme-badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: var(--atfa-space-xs) var(--atfa-space-sm);
+            border-radius: var(--atfa-radius-sm);
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        /* PayPal Card Specific */
+        .paypal-card {
+            border-top: 4px solid #003087;
+        }
+
+        .paypal-card .donation-header {
+            background: linear-gradient(135deg, #003087 0%, #0070BA 100%);
+            color: var(--atfa-white);
+            padding: var(--atfa-space-md);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .paypal-logo {
+            font-family: var(--atfa-font-heading);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .security-badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: var(--atfa-space-xs) var(--atfa-space-sm);
+            border-radius: var(--atfa-radius-sm);
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        /* Donation Content */
+        .donation-content {
+            padding: var(--atfa-space-xl);
+        }
+
+        .donation-title {
+            font-family: var(--atfa-font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--atfa-gray-900);
+            margin-bottom: var(--atfa-space-md);
+            line-height: 1.3;
+        }
+
+        .donation-description {
+            color: var(--atfa-gray-600);
+            line-height: 1.6;
+            margin-bottom: var(--atfa-space-lg);
+        }
+
+        /* Progress Section (GoFundMe) */
+        .progress-section {
+            margin-bottom: var(--atfa-space-lg);
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--atfa-gray-200);
+            border-radius: var(--atfa-radius-sm);
+            overflow: hidden;
+            margin-bottom: var(--atfa-space-sm);
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00D775 0%, #00B366 100%);
+            border-radius: var(--atfa-radius-sm);
+            transition: width 0.3s ease;
+        }
+
+        .progress-stats {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+        }
+
+        .progress-raised {
+            font-weight: 600;
+            color: var(--atfa-gray-900);
+        }
+
+        .progress-goal {
+            color: var(--atfa-gray-600);
+        }
+
+        /* Donation Impact (GoFundMe) */
+        .donation-impact {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--atfa-space-md);
+            margin-bottom: var(--atfa-space-lg);
+        }
+
+        .impact-item {
+            text-align: center;
+            padding: var(--atfa-space-md);
+            background: var(--atfa-gray-50);
+            border-radius: var(--atfa-radius-md);
+        }
+
+        .impact-number {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--atfa-primary);
+            margin-bottom: var(--atfa-space-xs);
+        }
+
+        .impact-label {
+            font-size: 0.85rem;
+            color: var(--atfa-gray-600);
+        }
+
+        /* PayPal Features */
+        .paypal-features {
+            margin-bottom: var(--atfa-space-lg);
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: var(--atfa-space-sm);
+            margin-bottom: var(--atfa-space-sm);
+            font-size: 0.9rem;
+            color: var(--atfa-gray-700);
+        }
+
+        .feature-icon {
+            font-size: 1rem;
+        }
+
+        /* Suggested Amounts */
+        .suggested-amounts {
+            display: flex;
+            gap: var(--atfa-space-sm);
+            margin-bottom: var(--atfa-space-lg);
+            flex-wrap: wrap;
+        }
+
+        .amount-chip {
+            padding: var(--atfa-space-sm) var(--atfa-space-md);
+            background: var(--atfa-gray-100);
+            border: 2px solid var(--atfa-gray-200);
+            border-radius: var(--atfa-radius-md);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .amount-chip:hover {
+            background: var(--atfa-primary);
+            color: var(--atfa-white);
+            border-color: var(--atfa-primary);
+        }
+
+        .amount-chip.featured {
+            background: var(--atfa-primary);
+            color: var(--atfa-white);
+            border-color: var(--atfa-primary);
+        }
+
+        /* Donation Buttons */
+        .donation-footer {
+            padding: 0 var(--atfa-space-xl) var(--atfa-space-xl);
+        }
+
+        .donation-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--atfa-space-sm);
+            width: 100%;
+            padding: var(--atfa-space-md) var(--atfa-space-xl);
+            border-radius: var(--atfa-radius-md);
+            font-family: var(--atfa-font-heading);
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .gofundme-btn {
+            background: linear-gradient(135deg, #00D775 0%, #00B366 100%);
+            color: var(--atfa-white);
+        }
+
+        .gofundme-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 215, 117, 0.3);
+        }
+
+        .paypal-btn {
+            background: linear-gradient(135deg, #003087 0%, #0070BA 100%);
+            color: var(--atfa-white);
+        }
+
+        .paypal-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 112, 186, 0.3);
+        }
+
+        .btn-icon {
+            font-size: 1.2rem;
+        }
+
+        /* Donation Footer Note */
+        .donation-footer-note {
+            background: var(--atfa-gray-50);
+            padding: var(--atfa-space-lg);
+            border-radius: var(--atfa-radius-md);
+            border-left: 4px solid var(--atfa-primary);
+        }
+
+        .donation-footer-note p {
+            color: var(--atfa-gray-700);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .contact-info-centered {
+                display: block;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: var(--atfa-space-xl);
+            }
+
+            .support-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .donation-grid {
+                grid-template-columns: 1fr;
+                gap: var(--atfa-space-lg);
+            }
+
+            .donation-impact {
+                grid-template-columns: 1fr;
+            }
+
+            .suggested-amounts {
+                justify-content: center;
+            }
+
+            .donation-content {
+                padding: var(--atfa-space-lg);
+            }
+
+            .donation-footer {
+                padding: 0 var(--atfa-space-lg) var(--atfa-space-lg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">💰</div>
+                <span>All Teens Financial Academy (ATFA)</span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="team.html" class="nav-link">Team</a>
+                <a href="news.html" class="nav-link">News</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="https://courses.atfaacademy.org/" class="btn-earn">Start Learning</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1 class="hero-title">Get in Touch</h1>
+            <p class="hero-subtitle">Ready to join our mission? Have questions about our programs? We'd love to hear from you.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-info-centered">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p><a href="mailto:ashwin.joshi@atfaacademy.org">ashwin.joshi@atfaacademy.org</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+15094057784">(509) 405-7784</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">🌐</div>
+                        <div class="contact-details">
+                            <h3>Website</h3>
+                            <p><a href="https://atfaacademy.org">atfaacademy.org</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">🏢</div>
+                        <div class="contact-details">
+                            <h3>Organization</h3>
+                            <p>501(c)(3) Nonprofit Organization<br>
+                            EIN: Available upon request</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="support-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Ways to Support Our Mission</h2>
+                <p class="section-subtitle">Join us in empowering the next generation with financial literacy</p>
+            </div>
+            
+            <div class="support-grid">
+                <div class="support-card">
+                    <div class="support-icon">🏫</div>
+                    <h3 class="support-title">Start a Chapter</h3>
+                    <p class="support-description">Bring ATFA to your school and help educate your peers about financial literacy.</p>
+                    <a href="https://atfaacademy.org/start-a-chapter/" class="support-btn">Learn More</a>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-icon">🤝</div>
+                    <h3 class="support-title">Partner with Us</h3>
+                    <p class="support-description">Corporate partnerships help us reach more students and develop better programs.</p>
+                    <a href="mailto:partnerships@atfaacademy.org" class="support-btn">Get in Touch</a>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-icon">📢</div>
+                    <h3 class="support-title">Spread the Word</h3>
+                    <p class="support-description">Follow us on social media and help us reach more teenagers who need financial education.</p>
+                    <a href="https://www.instagram.com/atfaacademy/" class="support-btn">Follow Us</a>
+                </div>
+            </div>
+            
+            <!-- Professional Donation Section -->
+            <div class="donation-section">
+                <div class="section-header">
+                    <h2 class="section-title">Support Our Mission</h2>
+                    <p class="section-subtitle">Help us provide free financial education to teenagers worldwide</p>
+                </div>
+                
+                <div class="donation-grid">
+                    <!-- GoFundMe Donation Card -->
+                    <div class="donation-card gofundme-card">
+                        <div class="donation-header">
+                            <div class="donation-logo">
+                                <div class="atfa-logo">
+                                    <div class="logo-icon">💰</div>
+                                    <span class="logo-text">ATFA</span>
+                                </div>
+                            </div>
+                            <div class="gofundme-badge">
+                                <span class="gf-text">GoFundMe</span>
+                            </div>
+                        </div>
+                        
+                        <div class="donation-content">
+                            <h3 class="donation-title">Help Make Financial Education For Kids Happen</h3>
+                            <p class="donation-description">Every dollar helps us reach more teenagers with life-changing financial literacy education. Join our mission to create financially empowered young adults.</p>
+                            
+                            <div class="progress-section">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 65%;"></div>
+                                </div>
+                                <div class="progress-stats">
+                                    <span class="progress-raised">$6,500 raised</span>
+                                    <span class="progress-goal">of $10,000 goal</span>
+                                </div>
+                            </div>
+                            
+                            <div class="donation-impact">
+                                <div class="impact-item">
+                                    <span class="impact-number">100+</span>
+                                    <span class="impact-label">Students Reached Per $100</span>
+                                </div>
+                                <div class="impact-item">
+                                    <span class="impact-number">12</span>
+                                    <span class="impact-label">Courses Available</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="donation-footer">
+                            <a href="https://gofund.me/653c445d" class="donation-btn gofundme-btn" target="_blank" rel="noopener noreferrer">
+                                <span class="btn-icon">❤️</span>
+                                <span class="btn-text">Donate on GoFundMe</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- PayPal Donation Card -->
+                    <div class="donation-card paypal-card">
+                        <div class="donation-header">
+                            <div class="paypal-logo">
+                                <span class="paypal-text">PayPal</span>
+                            </div>
+                            <div class="security-badge">
+                                <span class="security-text">🔒 Secure</span>
+                            </div>
+                        </div>
+                        
+                        <div class="donation-content">
+                            <h3 class="donation-title">Quick & Secure Donation</h3>
+                            <p class="donation-description">Make a secure one-time or recurring donation through PayPal. Every contribution directly supports our educational programs.</p>
+                            
+                            <div class="paypal-features">
+                                <div class="feature-item">
+                                    <span class="feature-icon">🔒</span>
+                                    <span class="feature-text">Bank-level Security</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">💳</span>
+                                    <span class="feature-text">Card or Bank Account</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">📄</span>
+                                    <span class="feature-text">Tax-deductible Receipt</span>
+                                </div>
+                            </div>
+                            
+                            <div class="suggested-amounts">
+                                <div class="amount-chip">$25</div>
+                                <div class="amount-chip">$50</div>
+                                <div class="amount-chip featured">$100</div>
+                                <div class="amount-chip">$250</div>
+                            </div>
+                        </div>
+                        
+                        <div class="donation-footer">
+                            <a href="https://www.paypal.com/donate?token=zufzhX_KpHvMMiyakQoCeYoHd4PClDgzSAV6XV0MieS0OktSjH3DhS6aZ_8ZwTOgZdj654n8kxNrBPIS" class="donation-btn paypal-btn" target="_blank" rel="noopener noreferrer">
+                                <span class="btn-icon">💙</span>
+                                <span class="btn-text">Donate with PayPal</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="donation-footer-note">
+                    <p><strong>501(c)(3) Tax-Deductible:</strong> All Teens Financial Academy is a registered 501(c)(3) nonprofit organization. Your donation is tax-deductible to the full extent allowed by law. You will receive a receipt for your records.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">💰</div>
+                        <span>All Teens Financial Academy (ATFA)</span>
+                    </div>
+                    <p class="footer-description">Empowering teenagers worldwide with essential financial literacy skills through peer-to-peer education and practical learning that leads to real wealth creation.</p>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/@atfaacademy" class="social-link" target="_blank">
+                            <span>📺</span> YouTube
+                        </a>
+                        <a href="https://www.instagram.com/atfaacademy/" class="social-link" target="_blank">
+                            <span>📸</span> Instagram
+                        </a>
+                        <a href="https://www.linkedin.com/company/all-teens-financial-academy/" class="social-link" target="_blank">
+                            <span>💼</span> LinkedIn
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Core Courses</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+BAS101+3000/about">Budgeting & Saving</a></li>
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+CR101+3000/about">Credit Mastery</a></li>
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+SM101+3000/about">Stock Market</a></li>
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+SH101+3000/about">Side Hustles</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Advanced Topics</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+CY101+3000/about">Cryptocurrency</a></li>
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+HFG101+3000/about">401(k) & IRAs</a></li>
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+TS101+3000/about">Taxes</a></li>
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+DS101+Dropshipping/about">Ecommerce</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">About ATFA</h4>
+                    <ul class="footer-links">
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="news.html">News & Press</a></li>
+                        <li><a href="https://atfaacademy.org/start-a-chapter/">Start a Chapter</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 All Teen Financial Academy (ATFA). All rights reserved. | 501(c)(3) Nonprofit Organization</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
