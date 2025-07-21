@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Key Supporters | All Teens Financial Academy (ATFA)</title>
+    <meta name="description" content="Thank you to our key supporters who make ATFA's financial literacy education for teenagers possible. Learn about our sponsors and partners.">
+    <meta name="keywords" content="ATFA sponsors, supporters, financial literacy partners, teen education supporters">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Our Key Supporters | All Teens Financial Academy (ATFA)">
+    <meta property="og:description" content="Thank you to our key supporters who make ATFA's financial literacy education for teenagers possible.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://atfaacademy.org/sponsors.html">
+    <meta property="og:site_name" content="All Teens Financial Academy">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Our Key Supporters | All Teens Financial Academy (ATFA)">
+    <meta name="twitter:description" content="Thank you to our key supporters who make ATFA's financial literacy education for teenagers possible.">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="All Teens Financial Academy">
+    <link rel="canonical" href="https://atfaacademy.org/sponsors.html">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💰</text></svg>">
+    
+    <!-- Unified ATFA Stylesheets -->
+    <link rel="stylesheet" href="css/atfa-unified.css">
+    <link rel="stylesheet" href="css/header-fix.css">
+    
+    <!-- Sponsors Page Styles -->
+    <style>
+        /* Sponsors Hero Section */
+        .sponsors-hero {
+            min-height: 70vh;
+            background: linear-gradient(135deg, 
+                #0D1B2A 0%, 
+                #1B2951 25%, 
+                #2E4057 50%, 
+                #1B5E20 75%, 
+                #2E7D32 100%);
+            position: relative;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .sponsors-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 30% 70%, rgba(255, 143, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 70% 30%, rgba(13, 71, 161, 0.1) 0%, transparent 50%);
+        }
+
+        .sponsors-hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 var(--atfa-space-6);
+        }
+
+        .sponsors-hero-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 900;
+            line-height: 1.2;
+            margin-bottom: var(--atfa-space-6);
+            background: linear-gradient(135deg, #FFFFFF 0%, #E8F5E8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .sponsors-hero-subtitle {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: var(--atfa-space-8);
+        }
+
+        /* Sponsors Grid Section */
+        .sponsors-section {
+            padding: var(--atfa-space-20) 0;
+            background: var(--atfa-white);
+        }
+
+        .sponsors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--atfa-space-8);
+            margin-top: var(--atfa-space-12);
+        }
+
+        .sponsor-card {
+            background: var(--atfa-white);
+            border-radius: var(--atfa-radius-2xl);
+            padding: var(--atfa-space-8);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--atfa-gray-200);
+            transition: all 0.3s ease;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sponsor-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(27, 94, 32, 0.03), transparent);
+            transition: left 0.6s;
+        }
+
+        .sponsor-card:hover::before {
+            left: 100%;
+        }
+
+        .sponsor-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+            border-color: var(--atfa-primary);
+        }
+
+        .sponsor-logo {
+            width: 120px;
+            height: 80px;
+            margin: 0 auto var(--atfa-space-6);
+            background: var(--atfa-gray-100);
+            border-radius: var(--atfa-radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .sponsor-logo img {
+            max-width: 100%;
+            height: auto;
+            width: 100%;
+            object-fit: contain;
+            transition: all 0.3s ease;
+        }
+
+        .sponsor-logo::after {
+            content: '🏢';
+            position: absolute;
+            font-size: 2rem;
+            color: var(--atfa-gray-400);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            background: var(--atfa-gray-100);
+        }
+
+        .sponsor-card:hover .sponsor-logo img {
+            transform: scale(1.05);
+        }
+
+        .sponsor-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--atfa-gray-900);
+            margin-bottom: var(--atfa-space-3);
+            font-family: var(--atfa-font-heading);
+        }
+
+        .sponsor-description {
+            color: var(--atfa-gray-600);
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        /* CTA Section */
+        .sponsor-cta-section {
+            padding: var(--atfa-space-20) 0;
+            background: linear-gradient(135deg, var(--atfa-secondary) 0%, var(--atfa-secondary-dark) 100%);
+            color: var(--atfa-white);
+            text-align: center;
+        }
+
+        .sponsor-cta-content {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0 var(--atfa-space-6);
+        }
+
+        .sponsor-cta-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: var(--atfa-space-4);
+            font-family: var(--atfa-font-heading);
+        }
+
+        .sponsor-cta-subtitle {
+            font-size: 1.25rem;
+            margin-bottom: var(--atfa-space-8);
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .sponsor-cta-button {
+            background: var(--atfa-white);
+            color: var(--atfa-secondary);
+            padding: var(--atfa-space-4) var(--atfa-space-8);
+            border-radius: var(--atfa-radius-2xl);
+            font-weight: 700;
+            font-size: 1.125rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .sponsor-cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            color: var(--atfa-secondary);
+            text-decoration: none;
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            padding: var(--atfa-space-20) 0;
+            background: var(--atfa-gray-50);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--atfa-space-6);
+            margin-top: var(--atfa-space-12);
+        }
+
+        .benefit-card {
+            background: var(--atfa-white);
+            border-radius: var(--atfa-radius-2xl);
+            padding: var(--atfa-space-6);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--atfa-gray-200);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .benefit-icon {
+            font-size: 2.5rem;
+            margin-bottom: var(--atfa-space-4);
+        }
+
+        .benefit-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--atfa-gray-900);
+            margin-bottom: var(--atfa-space-3);
+        }
+
+        .benefit-description {
+            color: var(--atfa-gray-600);
+            line-height: 1.5;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            /* Navigation optimizations */
+            .nav-container {
+                padding: 0 var(--atfa-space-4);
+            }
+            
+            .nav-logo span {
+                font-size: 1.1rem;
+                line-height: 1.3;
+            }
+            
+            .dropdown-content {
+                position: static;
+                display: none;
+                background: var(--atfa-white);
+                box-shadow: none;
+                border-radius: 0;
+                padding: var(--atfa-space-2) 0;
+                flex-direction: column;
+                gap: var(--atfa-space-1);
+            }
+            
+            .dropdown-content a {
+                padding: var(--atfa-space-2) var(--atfa-space-4);
+                font-size: 0.9rem;
+                border-bottom: 1px solid var(--atfa-gray-200);
+            }
+            
+            .dropdown.active .dropdown-content {
+                display: flex;
+            }
+
+            .sponsors-hero {
+                min-height: 60vh;
+                padding: var(--atfa-space-8) 0;
+            }
+
+            .sponsors-hero-title {
+                font-size: clamp(2rem, 6vw, 3rem);
+            }
+
+            .sponsors-hero-subtitle {
+                font-size: 1.1rem;
+                padding: 0 var(--atfa-space-4);
+            }
+
+            .sponsors-grid {
+                grid-template-columns: 1fr;
+                gap: var(--atfa-space-6);
+            }
+
+            .sponsor-card {
+                padding: var(--atfa-space-6);
+            }
+
+            .sponsor-logo {
+                width: 100px;
+                height: 70px;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .sponsor-cta-title {
+                font-size: 2rem;
+            }
+
+            .sponsor-cta-subtitle {
+                font-size: 1.1rem;
+                padding: 0 var(--atfa-space-4);
+            }
+            
+            .sponsor-cta-button {
+                font-size: 1rem;
+                padding: var(--atfa-space-3) var(--atfa-space-6);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .sponsors-hero-content {
+                padding: 0 var(--atfa-space-4);
+            }
+
+            .sponsor-card {
+                padding: var(--atfa-space-5);
+            }
+
+            .sponsor-name {
+                font-size: 1.3rem;
+            }
+
+            .sponsor-cta-button {
+                padding: var(--atfa-space-4) var(--atfa-space-6);
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">💰</div>
+                <span>All Teens Financial Academy (ATFA)</span>
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Courses <span class="dropdown-arrow">▼</span></a>
+                    <div class="dropdown-content">
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+BAS101+3000/about">Budgeting & Saving</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+CR101+3000/about">Credit</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+SM101+3000/about">Stock Market</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+SH101+3000/about">Side Hustles</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+CN101+3000/about">College Navigation</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+CY101+3000/about">Cryptocurrency</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+FM101+3000/about">Financial Mindset</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+JA102+3000/about">Job Applications</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+TS101+3000/about">Taxes</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+HFG101+3000/about">401(k) & Roth IRAs</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+DS101+Dropshipping/about">Ecommerce</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+INFO+3000/about">Guest Speakers</a>
+                    </div>
+                </div>
+                <a href="team.html" class="nav-link">Team</a>
+                <a href="news.html" class="nav-link">News</a>
+                <a href="sponsors.html" class="nav-link">Sponsors</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="https://courses.atfaacademy.org/" class="btn btn-earn">Start Learning</a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="sponsors-hero">
+        <div class="sponsors-hero-content">
+            <h1 class="sponsors-hero-title">Thank You to Our Partners</h1>
+            <p class="sponsors-hero-subtitle">Our key supporters make ATFA's mission possible by providing essential resources and backing that enables us to deliver free, high-quality financial literacy education to teenagers worldwide. Together, we're building financially empowered communities.</p>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section class="sponsors-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="text-5xl font-extrabold text-gray-900 m-6">Our Key Supporters</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">We are grateful to these organizations and businesses who share our vision of financially literate teenagers and support our educational mission.</p>
+            </div>
+            
+            <div class="sponsors-grid">
+                <!-- HFG Trust -->
+                <div class="sponsor-card">
+                    <div class="sponsor-logo">
+                        <img src="logos/hfg-trust.png" alt="HFG Trust Logo" loading="lazy">
+                    </div>
+                    <h3 class="sponsor-name">HFG Trust</h3>
+                    <p class="sponsor-description">Supporting community financial education and empowering the next generation with essential money management skills.</p>
+                </div>
+                
+                <!-- Kiwanis International -->
+                <div class="sponsor-card">
+                    <div class="sponsor-logo">
+                        <img src="logos/kiwanis.png" alt="Kiwanis International Logo" loading="lazy">
+                    </div>
+                    <h3 class="sponsor-name">Kiwanis International</h3>
+                    <p class="sponsor-description">Dedicated to improving the world one child and one community at a time through youth-focused financial literacy programs.</p>
+                </div>
+                
+                <!-- Tri-Cities Rotary Club -->
+                <div class="sponsor-card">
+                    <div class="sponsor-logo">
+                        <img src="logos/rotary.png" alt="Tri-Cities Rotary Club Logo" loading="lazy">
+                    </div>
+                    <h3 class="sponsor-name">Tri-Cities Rotary Club</h3>
+                    <p class="sponsor-description">Committed to service above self and supporting educational initiatives that strengthen our local communities.</p>
+                </div>
+                
+                <!-- Morgan Stanley -->
+                <div class="sponsor-card">
+                    <div class="sponsor-logo">
+                        <img src="logos/morgan-stanley.png" alt="Morgan Stanley Logo" loading="lazy">
+                    </div>
+                    <h3 class="sponsor-name">Morgan Stanley</h3>
+                    <p class="sponsor-description">Leading financial services firm supporting financial literacy education and empowering young people with investment knowledge.</p>
+                </div>
+                
+                <!-- Harvest Foods -->
+                <div class="sponsor-card">
+                    <div class="sponsor-logo">
+                        <img src="logos/harvest-foods.png" alt="Harvest Foods Logo" loading="lazy">
+                    </div>
+                    <h3 class="sponsor-name">Harvest Foods</h3>
+                    <p class="sponsor-description">Community-focused grocery chain supporting local youth education and financial wellness programs.</p>
+                </div>
+                
+                <!-- Richland Inn and Suites -->
+                <div class="sponsor-card">
+                    <div class="sponsor-logo">
+                        <img src="logos/richland-inn.png" alt="Richland Inn and Suites Logo" loading="lazy">
+                    </div>
+                    <h3 class="sponsor-name">Richland Inn and Suites</h3>
+                    <p class="sponsor-description">Local hospitality leader committed to supporting educational initiatives that benefit teenage development.</p>
+                </div>
+                
+                <!-- Pacific Clinic -->
+                <div class="sponsor-card">
+                    <div class="sponsor-logo">
+                        <img src="logos/pacific-clinic.png" alt="Pacific Clinic Logo" loading="lazy">
+                    </div>
+                    <h3 class="sponsor-name">Pacific Clinic</h3>
+                    <p class="sponsor-description">Healthcare provider dedicated to community wellness and supporting programs that promote teenage financial health.</p>
+                </div>
+                
+                <!-- Banner Bank -->
+                <div class="sponsor-card">
+                    <div class="sponsor-logo">
+                        <img src="logos/banner-bank.png" alt="Banner Bank Logo" loading="lazy">
+                    </div>
+                    <h3 class="sponsor-name">Banner Bank</h3>
+                    <p class="sponsor-description">Community bank passionate about financial education and empowering young people with banking and investment knowledge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsorship Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="text-5xl font-extrabold text-gray-900 m-6">Why Partner With ATFA</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Join our mission and make a meaningful impact while gaining valuable benefits for your organization.</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌍</div>
+                    <h3 class="benefit-title">Global Impact</h3>
+                    <p class="benefit-description">Reach over 100,000 students across 150+ countries and make a lasting difference in financial literacy education.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤝</div>
+                    <h3 class="benefit-title">Community Partnership</h3>
+                    <p class="benefit-description">Build strong relationships with local communities and demonstrate your commitment to youth development.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">📈</div>
+                    <h3 class="benefit-title">Brand Recognition</h3>
+                    <p class="benefit-description">Gain visibility through our digital platforms, events, and educational materials reaching thousands of engaged families.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3 class="benefit-title">Mission Alignment</h3>
+                    <p class="benefit-description">Support a cause that creates financially responsible future customers and community members.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="sponsor-cta-section">
+        <div class="sponsor-cta-content">
+            <h2 class="sponsor-cta-title">Become a Sponsor</h2>
+            <p class="sponsor-cta-subtitle">Join our community of supporters and help us expand financial literacy education to even more teenagers worldwide. Together, we can build a financially empowered generation.</p>
+            <a href="contact.html" class="sponsor-cta-button">Partner With Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">💰</div>
+                        <span>All Teens Financial Academy (ATFA)</span>
+                    </div>
+                    <p class="footer-description">Empowering teenagers worldwide with essential financial literacy skills through peer-to-peer education and practical learning that leads to real wealth creation.</p>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/@atfaacademy" class="social-link" target="_blank">
+                            <span>📺</span> YouTube
+                        </a>
+                        <a href="https://www.instagram.com/atfaacademy/" class="social-link" target="_blank">
+                            <span>📸</span> Instagram
+                        </a>
+                        <a href="https://www.linkedin.com/company/all-teens-financial-academy/" class="social-link" target="_blank">
+                            <span>💼</span> LinkedIn
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Core Courses</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+BAS101+3000/about">Budgeting & Saving</a></li>
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+CR101+3000/about">Credit Mastery</a></li>
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+SM101+3000/about">Stock Market</a></li>
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+SH101+3000/about">Side Hustles</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Advanced Topics</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+CY101+3000/about">Cryptocurrency</a></li>
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+HFG101+3000/about">401(k) & IRAs</a></li>
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+TS101+3000/about">Taxes</a></li>
+                        <li><a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+DS101+Dropshipping/about">Ecommerce</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">About ATFA</h4>
+                    <ul class="footer-links">
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="news.html">News & Press</a></li>
+                        <li><a href="sponsors.html">Our Sponsors</a></li>
+                        <li><a href="start-a-chapter.html">Start a Chapter</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 All Teen Financial Academy (ATFA). All rights reserved. | 501(c)(3) Nonprofit Organization</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/header-navigation.js"></script>
+    <script>
+        // Additional sponsors page functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate sponsor cards on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe sponsor cards for animation
+            document.querySelectorAll('.sponsor-card, .benefit-card').forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'all 0.6s ease';
+                observer.observe(card);
+            });
+
+            // Handle missing logo images gracefully
+            document.querySelectorAll('.sponsor-logo img').forEach(img => {
+                img.addEventListener('error', function() {
+                    this.style.display = 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

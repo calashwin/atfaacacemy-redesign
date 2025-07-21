@@ -15,6 +15,7 @@
     
     <!-- Unified ATFA Stylesheets -->
     <link rel="stylesheet" href="css/atfa-unified.css">
+    <link rel="stylesheet" href="css/header-fix.css">
     
     <!-- Team Page uses unified ATFA design system -->
 </head>
@@ -28,12 +29,28 @@
             </a>
             
             <div class="nav-menu" id="nav-menu">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link">About</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Courses <span class="dropdown-arrow">▼</span></a>
+                    <div class="dropdown-content">
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+BAS101+3000/about">Budgeting & Saving</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+CR101+3000/about">Credit</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+SM101+3000/about">Stock Market</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+SH101+3000/about">Side Hustles</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+CN101+3000/about">College Navigation</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+CY101+3000/about">Cryptocurrency</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+FM101+3000/about">Financial Mindset</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+JA102+3000/about">Job Applications</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+TS101+3000/about">Taxes</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+HFG101+3000/about">401(k) & Roth IRAs</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+DS101+Dropshipping/about">Ecommerce</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+INFO+3000/about">Guest Speakers</a>
+                    </div>
+                </div>
                 <a href="team.html" class="nav-link">Team</a>
                 <a href="news.html" class="nav-link">News</a>
+                <a href="sponsors.html" class="nav-link">Sponsors</a>
                 <a href="contact.html" class="nav-link">Contact</a>
-                <a href="https://courses.atfaacademy.org/" class="btn-earn">Start Learning</a>
+                <a href="https://courses.atfaacademy.org/" class="btn btn-earn">Start Learning</a>
             </div>
             
             <div class="hamburger" id="hamburger">
@@ -55,7 +72,7 @@
             <div class="card bg-white rounded-2xl shadow-lg p-8 m-8">
                 <div class="stats-grid">
                     <div class="stat-item">
-                        <span class="stat-number">8</span>
+                        <span class="stat-number">9</span>
                         <span class="stat-label">Team Members</span>
                     </div>
                     <div class="stat-item">
@@ -147,13 +164,22 @@
                         <div class="member-email">parker.collette@atfaacademy.org</div>
                     </div>
                     
-                    <!-- Sahir Tandon - Technology Advisor -->
+                    <!-- Sahir Tandon - Cofounder -->
                     <div class="team-member">
                         <div class="member-photo">ST</div>
                         <h3 class="member-name">Sahir Tandon</h3>
-                        <p class="member-role">Technology Advisor</p>
-                        <p class="member-bio">Technology professional and Eagle Scout who provides technical guidance and platform development expertise to enhance our educational delivery systems.</p>
+                        <p class="member-role">Cofounder</p>
+                        <p class="member-bio">Joined ATFA as cofounder in 2022, bringing essential leadership to the organization's growth. Technology professional and Eagle Scout who contributes deep technical expertise and platform development skills to enhance educational innovation.</p>
                         <div class="member-email">sahir.tandon@atfaacademy.org</div>
+                    </div>
+                    
+                    <!-- Hamzeh Beckmohamadi - Cofounder -->
+                    <div class="team-member">
+                        <div class="member-photo">HB</div>
+                        <h3 class="member-name">Hamzeh Beckmohamadi</h3>
+                        <p class="member-role">Cofounder</p>
+                        <p class="member-bio">Integral part of ATFA's journey since the beginning. Pre-med student at University of Washington, where service is a core part of his identity, driving his commitment to teen financial education.</p>
+                        <div class="member-email">hamzeh.beckmohamadi@atfaacademy.org</div>
                     </div>
                 </div>
             </div>
@@ -170,17 +196,6 @@
                         <span class="logo-text">All Teens Financial Academy (ATFA)</span>
                     </div>
                     <p class="footer-description">Empowering teenagers with essential financial literacy skills through peer-to-peer education and practical learning.</p>
-                    <div class="social-links">
-                        <a href="https://www.youtube.com/@atfaacademy" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow ATFA on YouTube">
-                            <span class="social-icon">📺</span> YouTube
-                        </a>
-                        <a href="https://www.instagram.com/atfaacademy/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow ATFA on Instagram">
-                            <span class="social-icon">📸</span> Instagram
-                        </a>
-                        <a href="https://www.linkedin.com/company/all-teens-financial-academy/posts/?feedView=all" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow ATFA on LinkedIn">
-                            <span class="social-icon">💼</span> LinkedIn
-                        </a>
-                    </div>
                 </div>
                 
                 <div class="footer-section">
@@ -195,18 +210,18 @@
                 <div class="footer-section">
                     <h4 class="footer-title">Get Involved</h4>
                     <ul class="footer-links">
-                        <li><a href="https://atfaacademy.com/start-a-chapter/">Start a Chapter</a></li>
-                        <li><a href="https://atfaacademy.com/contact/">Volunteer</a></li>
+                        <li><a href="start-a-chapter.html">Start a Chapter</a></li>
+                        <li><a href="contact.html">Volunteer</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
                     <h4 class="footer-title">About</h4>
                     <ul class="footer-links">
-                        <li><a href="https://atfaacademy.com/about/">Our Mission</a></li>
+                        <li><a href="about.html">Our Mission</a></li>
                         <li><a href="team.html">Team</a></li>
                         <li><a href="news.html">News</a></li>
-                        <li><a href="https://atfaacademy.com/contact/">Contact Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -219,5 +234,6 @@
 
     <!-- JavaScript -->
     <script src="js/main.min.js" defer></script>
+    <script src="js/header-navigation.js"></script>
 </body>
 </html>

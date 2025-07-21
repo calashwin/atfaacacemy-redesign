@@ -15,6 +15,7 @@
     
     <!-- Unified ATFA Stylesheets -->
     <link rel="stylesheet" href="css/atfa-unified.css">
+    <link rel="stylesheet" href="css/header-fix.css">
     
     <!-- News Page uses unified ATFA design system -->
     <style>
@@ -172,12 +173,28 @@
             </a>
             
             <div class="nav-menu" id="nav-menu">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link">About</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Courses <span class="dropdown-arrow">▼</span></a>
+                    <div class="dropdown-content">
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+BAS101+3000/about">Budgeting & Saving</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+CR101+3000/about">Credit</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+SM101+3000/about">Stock Market</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+SH101+3000/about">Side Hustles</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+CN101+3000/about">College Navigation</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+CY101+3000/about">Cryptocurrency</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+FM101+3000/about">Financial Mindset</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+JA102+3000/about">Job Applications</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+TS101+3000/about">Taxes</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+HFG101+3000/about">401(k) & Roth IRAs</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+DS101+Dropshipping/about">Ecommerce</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+INFO+3000/about">Guest Speakers</a>
+                    </div>
+                </div>
                 <a href="team.html" class="nav-link">Team</a>
                 <a href="news.html" class="nav-link">News</a>
+                <a href="sponsors.html" class="nav-link">Sponsors</a>
                 <a href="contact.html" class="nav-link">Contact</a>
-                <a href="https://courses.atfaacademy.org/" class="btn-earn">Start Learning</a>
+                <a href="https://courses.atfaacademy.org/" class="btn btn-earn">Start Learning</a>
             </div>
             
             <div class="hamburger" id="hamburger">
@@ -383,7 +400,7 @@
                 <div class="footer-section">
                     <h4 class="footer-title">Get Involved</h4>
                     <ul class="footer-links">
-                        <li><a href="https://atfaacademy.com/start-a-chapter/">Start a Chapter</a></li>
+                        <li><a href="start-a-chapter.html">Start a Chapter</a></li>
                         <li><a href="https://atfaacademy.com/contact/">Volunteer</a></li>
                     </ul>
                 </div>
@@ -439,5 +456,6 @@
             });
         });
     </script>
+    <script src="js/header-navigation.js"></script>
 </body>
 </html>
