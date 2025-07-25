@@ -981,7 +981,7 @@ a:hover {
 /* Stats Grid */
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: var(--atfa-space-8);
     text-align: center;
 }
