@@ -40,7 +40,6 @@
         }
         
         .news-image {
-            height: 200px;
             background: var(--atfa-gradient-primary);
             display: flex;
             align-items: center;
@@ -48,6 +47,11 @@
             color: var(--atfa-white);
             font-size: var(--atfa-text-5xl);
             position: relative;
+        }
+
+        .news-image img {
+            max-width: 100%;
+            height: auto;
         }
         
         .news-content {
@@ -195,7 +199,13 @@
                     </div>
                 </div>
                 <a href="team.html" class="nav-link">Team</a>
-                <a href="news.html" class="nav-link">News</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Media <span class="dropdown-arrow">▼</span></a>
+                    <div class="dropdown-content">
+                        <a href="news.html" class="nav-link">News</a>
+                        <a href="articles.html" class="nav-link">Articles</a>
+                    </div>
+                </div>
                 <a href="sponsors.html" class="nav-link">Sponsors</a>
                 <a href="contact.html" class="nav-link">Contact</a>
                 <a href="https://courses.atfaacademy.org/" class="btn btn-earn">Start Learning</a>
@@ -235,6 +245,12 @@
                         <span class="stat-number">150+</span>
                         <span class="stat-label">Countries Reached</span>
                     </div>
+                    <div>
+                        <div class="stat-item">
+                            <span class="stat-number">1</span>
+                            <span class="stat-label">Book Mention</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -255,7 +271,23 @@
                 <div class="card card-featured" data-category="awards">
                     <div class="news-image">
                         <div class="news-badge">Featured</div>
-                        🏆
+                        <img src="news_photos/apr_16_2025.png">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-source">Outskirts Press</span>
+                            <span class="news-date">April 16 2025</span>
+                        </div>
+                        <h3 class="news-title">Gen Z Teens Take Action: Stories of Circumstance, Passion and Opportunity</h3>
+                        <p class="news-summary">Recognition of Ashwin Joshi's entrepeneurship, decision to take action during Covid, and impact on people globally.</p>
+                        <a href="https://a.co/d/civevIx" class="news-link external" target="_blank" rel="noopener noreferrer">Purchase & Read Full Book</a>
+                    </div>
+                </div>
+
+                <div class="card" data-category="legislation media">
+                    <div class="news-image">
+                        <div class="news-badge">Featured</div>
+                        <img src="news_photos/april_2_2024.png">
                     </div>
                     <div class="news-content">
                         <div class="news-meta">
@@ -270,7 +302,7 @@
 
                 <!-- Seattle Times Article -->
                 <div class="card" data-category="legislation media">
-                    <div class="news-image">📰</div>
+                    <div class="news-image"><img src="news_photos/feb_29_2024.png"></div>
                     <div class="news-content">
                         <div class="news-meta">
                             <span class="news-source">The Seattle Times</span>
@@ -284,7 +316,7 @@
 
                 <!-- Yahoo News -->
                 <div class="card" data-category="legislation media">
-                    <div class="news-image">📺</div>
+                    <div class="news-image"><img src="news_photos/feb_26_2024.png"></div>
                     <div class="news-content">
                         <div class="news-meta">
                             <span class="news-source">Yahoo News</span>
@@ -298,7 +330,7 @@
 
                 <!-- NBC Right Now -->
                 <div class="card" data-category="media">
-                    <div class="news-image">📹</div>
+                    <div class="news-image"><img src="news_photos/sep_12_2023.png"></div>
                     <div class="news-content">
                         <div class="news-meta">
                             <span class="news-source">NBC Right Now</span>
@@ -310,9 +342,23 @@
                     </div>
                 </div>
 
+                <!-- StockSense Collaboration -->
+                <div class="card" data-category="media">
+                    <div class="news-image"><img src="news_photos/feb_20_2024.png"></div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-source">ABNewswire</span>
+                            <span class="news-date">Feburary 20, 2024</span>
+                        </div>
+                        <h3 class="news-title">ATFA Collaborates with StockSense to Enhance Financial Literacy</h3>
+                        <p class="news-summary">Press release announcing strategic collaboration between ATFA and StockSense to expand mobile financial literacy education.</p>
+                        <a href="https://www.abnewswire.com/pressreleases/ashwin-teen-financial-academy-atfa-collaborates-with-stocksense-to-enhance-financial-literacy_688621.html" class="news-link external" target="_blank" rel="noopener noreferrer">Read Full Article</a>
+                    </div>
+                </div>
+
                 <!-- King Newswire -->
                 <div class="card" data-category="media">
-                    <div class="news-image">📄</div>
+                    <div class="news-image"><img src="news_photos/oct_31_2023.png"></div>
                     <div class="news-content">
                         <div class="news-meta">
                             <span class="news-source">King Newswire</span>
@@ -324,41 +370,27 @@
                     </div>
                 </div>
 
-                <!-- StockSense Collaboration -->
-                <div class="card" data-category="media">
-                    <div class="news-image">🤝</div>
+                <div class="card" data-category="legislation media">
+                    <div class="news-image"><img src="/news_photos/aug_14_2023.png"></div>
                     <div class="news-content">
                         <div class="news-meta">
-                            <span class="news-source">ABNewswire</span>
-                            <span class="news-date">2024</span>
+                            <span class="news-source">Tri-Cities Area Journal of Business</span>
+                            <span class="news-date">August 14, 2023aug</span>
                         </div>
-                        <h3 class="news-title">ATFA Collaborates with StockSense to Enhance Financial Literacy</h3>
-                        <p class="news-summary">Press release announcing strategic collaboration between ATFA and StockSense to expand mobile financial literacy education.</p>
-                        <a href="https://www.abnewswire.com/pressreleases/ashwin-teen-financial-academy-atfa-collaborates-with-stocksense-to-enhance-financial-literacy_688621.html" class="news-link external" target="_blank" rel="noopener noreferrer">Read Full Article</a>
+                        <h3 class="news-title">Southridge senior kick-starts nonprofit to promote teen financial literacy</h3>
+                        <p class="news-summary">Coverage of ATFA's founding and growth from the pandemic and service to the community.</p>
+                        <a href="https://www.tricitiesbusinessnews.com/articles/4642" class="news-link external" target="_blank" rel="noopener noreferrer">Read Full Article</a>
                     </div>
                 </div>
 
-                <!-- Yakima Herald -->
-                <div class="card" data-category="legislation media">
-                    <div class="news-image">🗞️</div>
-                    <div class="news-content">
-                        <div class="news-meta">
-                            <span class="news-source">Yakima Herald</span>
-                            <span class="news-date">2024</span>
-                        </div>
-                        <h3 class="news-title">Meet the Tri-City teen behind financial literacy legislation</h3>
-                        <p class="news-summary">Regional newspaper coverage of Joshi's legislative advocacy and ATFA's mission to bring financial education to Washington state schools.</p>
-                        <a href="https://www.yakimaherald.com/news/northwest/financial-literacy-may-soon-be-required-in-wa-to-graduate-meet-the-tri-city-teen/article_70087683-c8e7-5660-b3b8-ce0b3d6d374f.html" class="news-link external" target="_blank" rel="noopener noreferrer">Read Full Article</a>
-                    </div>
-                </div>
 
                 <!-- KEPR TV -->
                 <div class="card" data-category="legislation media">
-                    <div class="news-image">📺</div>
+                    <div class="news-image"><img src="news_photos/feb_19_2024.png"></div>
                     <div class="news-content">
                         <div class="news-meta">
                             <span class="news-source">KEPR TV</span>
-                            <span class="news-date">2024</span>
+                            <span class="news-date">Feburary 19, 2024</span>
                         </div>
                         <h3 class="news-title">Southridge senior fights for financial literacy in schools</h3>
                         <p class="news-summary">Local TV news coverage of Joshi's legislative advocacy efforts for financial literacy requirements and House Bill 1915 progress.</p>
