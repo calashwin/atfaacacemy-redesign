@@ -17,6 +17,7 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💰</text></svg>">
     
     <!-- Header Fix CSS -->
+    <link rel="stylesheet" href="css/atfa-unified.css">
     <link rel="stylesheet" href="css/header-fix.css">
     
     <!-- Stylesheets -->
@@ -828,6 +829,64 @@
                 padding: 0 var(--atfa-space-lg) var(--atfa-space-lg);
             }
         }
+
+        /* Mobile Navigation */
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        padding: var(--atfa-space-2);
+    }
+
+    .hamburger .bar {
+        width: 25px;
+        height: 3px;
+        background-color: var(--atfa-gray-700);
+        margin: 3px 0;
+        transition: var(--atfa-transition-base);
+        border-radius: var(--atfa-radius-base);
+    }
+
+    @media (max-width: 768px) {
+        .nav-menu {
+            position: fixed;
+            left: -100%;
+            top: 80px;
+            flex-direction: column;
+            background: var(--atfa-white);
+            width: 100%;
+            text-align: center;
+            transition: var(--atfa-transition-base);
+            box-shadow: var(--atfa-shadow-lg);
+            padding: var(--atfa-space-8) 0;
+        }
+
+        .nav-menu.active {
+            left: 0;
+        }
+
+        .nav-link {
+            padding: var(--atfa-space-4) var(--atfa-space-6);
+            display: block;
+            margin: var(--atfa-space-2) 0;
+        }
+
+        .hamburger {
+            display: flex;
+        }
+
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(9px) rotate(45deg);
+        }
+
+        .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-9px) rotate(-45deg);
+        }
+    }
     </style>
 </head>
 <body>
@@ -910,7 +969,7 @@
                         <div class="contact-icon">📱</div>
                         <div class="contact-details">
                             <h3>Phone</h3>
-                            <p><a href="tel:+15094057784">(509) 405-7784</a></p>
+                            <p><a href="tel:+15094057784">(650) 727-7209</a></p>
                         </div>
                     </div>
                     
@@ -1135,6 +1194,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/main.min.js" defer></script>
     <script src="js/header-navigation.js"></script>
 </body>
 </html>
