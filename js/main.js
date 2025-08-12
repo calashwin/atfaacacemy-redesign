@@ -2,6 +2,12 @@
 
 // DOM Content Loaded
 document.addEventListener('DOMContentLoaded', function() {
+    // Remove any existing scroll progress bars
+    const existingProgress = document.querySelector('.scroll-progress');
+    if (existingProgress) {
+        existingProgress.remove();
+    }
+
     // Initialize all components
     initNavigation();
     initTestimonialCarousel();
@@ -122,45 +128,6 @@ function initScrollEffects() {
     animateElements.forEach(el => {
         observer.observe(el);
     });
-
-    // Progress indicator for page scroll
-    createScrollProgress();
-}
-
-// Create scroll progress indicator
-function createScrollProgress() {
-    const progressBar = document.createElement('div');
-    progressBar.className = 'scroll-progress';
-    progressBar.innerHTML = '<div class="scroll-progress-fill"></div>';
-    document.body.appendChild(progressBar);
-
-    const progressFill = progressBar.querySelector('.scroll-progress-fill');
-
-    window.addEventListener('scroll', () => {
-        const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-        progressFill.style.width = Math.min(scrollPercent, 100) + '%';
-    });
-
-    // Add CSS for scroll progress
-    const style = document.createElement('style');
-    style.textContent = `
-        .scroll-progress {
-            position: fixed;
-            top: 70px;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: rgba(229, 231, 235, 0.3);
-            z-index: 999;
-        }
-        .scroll-progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #2563eb, #10b981);
-            width: 0%;
-            transition: width 0.1s ease;
-        }
-    `;
-    document.head.appendChild(style);
 }
 
 // Smooth scrolling for anchor links

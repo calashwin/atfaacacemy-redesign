@@ -22,6 +22,15 @@
     
     <!-- Page-specific styles -->
     <style>
+        /* Fix for scroll progress bar */
+        .scroll-progress {
+            top: 0 !important;
+            z-index: 1001 !important;
+        }
+        .scroll-progress-fill {
+            background: var(--atfa-primary-light) !important;
+        }
+
         /* Hero Section */
         .internship-hero {
             background: linear-gradient(135deg, var(--atfa-primary) 0%, var(--atfa-accent) 100%);

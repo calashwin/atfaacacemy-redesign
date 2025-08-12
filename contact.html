@@ -43,6 +43,18 @@
             --atfa-gray-900: #212121;
             --atfa-font-heading: 'Poppins', sans-serif;
             --atfa-font-body: 'Inter', sans-serif;
+            --atfa-space-1: 0.25rem;
+            --atfa-space-2: 0.5rem;
+            --atfa-space-3: 0.75rem;
+            --atfa-space-4: 1rem;
+            --atfa-space-5: 1.25rem;
+            --atfa-space-6: 1.5rem;
+            --atfa-space-8: 2rem;
+            --atfa-space-10: 2.5rem;
+            --atfa-space-12: 3rem;
+            --atfa-space-16: 4rem;
+            --atfa-space-20: 5rem;
+            --atfa-space-24: 6rem;
             --atfa-space-xs: 0.5rem;
             --atfa-space-sm: 1rem;
             --atfa-space-md: 1.5rem;
@@ -99,9 +111,9 @@
         }
 
         .nav-container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
-            padding: 0 var(--atfa-space-sm);
+            padding: 0 var(--atfa-space-4);
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -111,12 +123,13 @@
         .nav-logo {
             display: flex;
             align-items: center;
-            gap: var(--atfa-space-sm);
+            gap: var(--atfa-space-2);
             font-family: var(--atfa-font-heading);
-            font-weight: 800;
-            font-size: 1.5rem;
+            font-weight: 700;
+            font-size: 1.25rem;
             color: var(--atfa-primary);
             text-decoration: none;
+            margin-right: auto;
         }
 
         .logo-icon {
@@ -134,7 +147,11 @@
         .nav-menu {
             display: flex;
             align-items: center;
-            gap: var(--atfa-space-lg);
+            gap: var(--atfa-space-6);
+            flex: 1;
+            justify-content: center;
+            max-width: none;
+            overflow: visible;
         }
 
         .nav-link {
@@ -904,7 +921,7 @@
                     <button class="mobile-close-btn" id="mobile-close-btn">✕</button>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link">Courses <span class="dropdown-arrow">▼</span></a>
+                    <a href="#" class="nav-link" style="display: flex; align-items: center; gap: 4px;">Courses<span class="dropdown-arrow" style="display: inline-block; margin-top: 2px;">▼</span></a>
                     <div class="dropdown-content">
                         <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+BAS101+3000/about">Budgeting & Saving</a>
                         <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+CR101+3000/about">Credit</a>
