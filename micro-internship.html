@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro-Internship Program | All Teens Financial Academy</title>
+    <meta name="description" content="Join ATFA's groundbreaking micro-internship program where teens can progress from paper trading to managing real investments under expert mentorship.">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💰</text></svg>">
+    
+    <!-- Unified ATFA Stylesheets -->
+    <link rel="stylesheet" href="css/atfa-unified.css">
+    <link rel="stylesheet" href="css/header-fix.css">
+    
+    <!-- Page-specific styles -->
+    <style>
+        /* Fix for scroll progress bar */
+        .scroll-progress {
+            top: 0 !important;
+            z-index: 1001 !important;
+        }
+        .scroll-progress-fill {
+            background: var(--atfa-primary-light) !important;
+        }
+
+        /* Global page padding */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        /* Hero Section */
+        .internship-hero {
+            background: linear-gradient(135deg, var(--atfa-primary) 0%, var(--atfa-accent) 100%);
+            padding: var(--atfa-space-3xl) 0;
+            color: var(--atfa-white);
+            margin-top: 80px;
+            text-align: center;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .internship-hero-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: var(--atfa-space-xl);
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .internship-hero-subtitle {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 20px auto 0;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        /* Program Overview */
+        .program-overview {
+            padding: 80px 0;
+            background: var(--atfa-light);
+            margin: 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--atfa-gray-900);
+            margin-bottom: var(--atfa-space-3xl);
+            text-align: center;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            margin: 60px auto;
+            max-width: 1000px;
+        }
+
+        .step-card {
+            background: var(--atfa-white);
+            padding: 30px;
+            border-radius: var(--atfa-radius-xl);
+            box-shadow: var(--atfa-shadow-lg);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 15px;
+        }
+
+        .step-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+        }
+
+        .step-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--atfa-primary);
+            margin-bottom: var(--atfa-space-lg);
+            opacity: 0.7;
+        }
+
+        .step-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: var(--atfa-space-md);
+            color: var(--atfa-gray-900);
+            line-height: 1.3;
+        }
+
+        .step-card p {
+            font-size: 1rem;
+            color: var(--atfa-gray-600);
+            line-height: 1.6;
+        }
+
+        /* Mentors Section */
+        .mentors-section {
+            padding: 80px 0;
+            background: var(--atfa-white);
+            margin: 0;
+        }
+
+        .mentors-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            margin: 60px auto;
+            max-width: 1000px;
+        }
+
+        .mentor-card {
+            text-align: center;
+            padding: 30px;
+            border-radius: var(--atfa-radius-xl);
+            background: var(--atfa-light);
+            transition: all 0.3s ease;
+            box-shadow: var(--atfa-shadow-lg);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 15px;
+        }
+
+        .mentor-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+        }
+
+        .mentor-name {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin: var(--atfa-space-lg) 0 var(--atfa-space-md);
+            color: var(--atfa-gray-900);
+        }
+
+        .mentor-title {
+            color: var(--atfa-gray-600);
+            font-size: 1rem;
+            margin-bottom: var(--atfa-space-lg);
+            line-height: 1.5;
+        }
+
+        /* Donation Tiers */
+        .donation-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--atfa-primary-light) 0%, var(--atfa-primary) 100%);
+            color: var(--atfa-white);
+            margin: 0;
+        }
+
+        .donation-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin: 60px auto;
+            max-width: 1000px;
+        }
+
+        .donation-tier {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: var(--atfa-radius-xl);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 15px;
+        }
+
+        .donation-tier:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .donation-amount {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: var(--atfa-space-lg);
+            color: var(--atfa-secondary);
+        }
+
+        .donation-description {
+            font-size: 1rem;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 80px 0;
+            text-align: center;
+            background: var(--atfa-light);
+            margin: 0;
+        }
+
+        .cta-section .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px;
+        }
+
+        .cta-section p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            color: var(--atfa-gray-700);
+            padding: 0 40px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 20px 40px;
+            background: var(--atfa-secondary);
+            color: var(--atfa-white);
+            text-decoration: none;
+            border-radius: var(--atfa-radius-xl);
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            margin-top: 40px;
+            box-shadow: 0 10px 30px rgba(255, 143, 0, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(255, 143, 0, 0.4);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .internship-hero {
+                padding: var(--atfa-space-2xl) 0;
+            }
+
+            .internship-hero-title {
+                font-size: 2.5rem;
+                margin-bottom: var(--atfa-space-lg);
+            }
+
+            .internship-hero-subtitle {
+                font-size: 1.25rem;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+            }
+
+            .steps-grid,
+            .mentors-grid,
+            .donation-grid {
+                grid-template-columns: 1fr;
+                padding: 0 var(--atfa-space-md);
+            }
+
+            .step-card,
+            .mentor-card,
+            .donation-tier {
+                padding: var(--atfa-space-xl);
+            }
+
+            .donation-amount {
+                font-size: 2.5rem;
+            }
+
+            .cta-section p {
+                font-size: 1.1rem;
+                padding: 0 var(--atfa-space-md);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">💰</div>
+                <span class="logo-text-full">All Teens Financial Academy (ATFA)</span>
+                <span class="logo-text-short">ATFA</span>
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <div class="mobile-menu-header">
+                    <button class="mobile-close-btn" id="mobile-close-btn">✕</button>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Courses <span class="dropdown-arrow">▼</span></a>
+                    <div class="dropdown-content">
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+BAS101+3000/about">Budgeting & Saving</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+CR101+3000/about">Credit</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+SM101+3000/about">Stock Market</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+SH101+3000/about">Side Hustles</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+CN101+3000/about">College Navigation</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+CY101+3000/about">Cryptocurrency</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+FM101+3000/about">Financial Mindset</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+JA102+3000/about">Job Applications</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+TS101+3000/about">Taxes</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+HFG101+3000/about">401(k) & Roth IRAs</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+DS101+Dropshipping/about">Ecommerce</a>
+                        <a href="https://courses.atfaacademy.org/courses/course-v1:ATFA+INFO+3000/about">Guest Speakers</a>
+                    </div>
+                </div>
+                <a href="team.html" class="nav-link">Team</a>
+                <a href="news.html" class="nav-link">News</a>
+                <a href="sponsors.html" class="nav-link">Sponsors</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="micro-internship.html" class="nav-link active">Micro-Internship</a>
+                <a href="https://courses.atfaacademy.org/login" class="nav-link nav-cta">Start Learning</a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="internship-hero">
+        <div class="container">
+            <h1 class="internship-hero-title">Invest in a Teen's Financial Future</h1>
+            <p class="internship-hero-subtitle">ATFA's groundbreaking internship program takes financial education to the next level, giving talented teens the opportunity to manage real investments under expert guidance.</p>
+        </div>
+    </section>
+
+    <!-- Program Overview -->
+    <section class="program-overview">
+        <div class="container">
+            <h2 class="section-title">How Our Program Works</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Paper Trading Competition</h3>
+                    <p>Teens participate in our simulated stock trading competition, learning market fundamentals without financial risk.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Skill Development</h3>
+                    <p>Participants develop investment strategies, learn market analysis, and compete against their peers.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Champion Selection</h3>
+                    <p>The winner demonstrates superior trading skills, risk management, and investment knowledge.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3 class="step-title">Real Money Management</h3>
+                    <p>Our champion graduates to managing a $1,000 real investment account with dedicated mentorship support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mentors Section -->
+    <section class="mentors-section">
+        <div class="container">
+            <h2 class="section-title">Our Expert Mentors</h2>
+            <div class="mentors-grid">
+                <div class="mentor-card">
+                    <h3 class="mentor-name">Darwin Ching</h3>
+                    <p class="mentor-title">First Vice President Portfolio Manager at Morgan Stanley</p>
+                    <p>Bringing years of professional investment expertise to guide our interns through real-world portfolio management.</p>
+                </div>
+                <div class="mentor-card">
+                    <h3 class="mentor-name">Esat Bayar</h3>
+                    <p class="mentor-title">Business Operations & Strategy | Investment Banking | Harvard</p>
+                    <p>Sharing valuable insights from investment banking and strategic business operations experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Tiers -->
+    <section class="donation-section">
+        <div class="container">
+            <h2 class="section-title">How Your Donation Helps</h2>
+            <div class="donation-grid">
+                <div class="donation-tier">
+                    <div class="donation-amount">$25</div>
+                    <p class="donation-description">Covers educational materials for one teen</p>
+                </div>
+                <div class="donation-tier">
+                    <div class="donation-amount">$50</div>
+                    <p class="donation-description">Supports mentorship program resources</p>
+                </div>
+                <div class="donation-tier">
+                    <div class="donation-amount">$100</div>
+                    <p class="donation-description">Funds a month of market research tools</p>
+                </div>
+                <div class="donation-tier">
+                    <div class="donation-amount">$250</div>
+                    <p class="donation-description">Provides comprehensive financial education curriculum</p>
+                </div>
+                <div class="donation-tier">
+                    <div class="donation-amount">$500</div>
+                    <p class="donation-description">Sponsors half of the investment account</p>
+                </div>
+                <div class="donation-tier">
+                    <div class="donation-amount">$1,000</div>
+                    <p class="donation-description">Fully funds the winner's stock account</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact & CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="section-title">Join Us in Making a Difference</h2>
+            <p>Help us reward excellence and give our paper trading champion the ultimate prize – real investment experience with real capital. Your support today transforms theoretical knowledge into practical, life-changing experience.</p>
+            <p>ATFA is a registered 501(c)(3) nonprofit organization. Tax ID available upon request. All donations are tax-deductible to the full extent allowed by law.</p>
+            <a href="contact.html" class="cta-button">Support Our Program</a>
+        </div>
+    </section>
+
+    <script src="js/main.min.js" defer></script>
+    <script src="js/header-navigation.js"></script>
+</body>
+</html>
