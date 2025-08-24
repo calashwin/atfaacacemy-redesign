@@ -31,6 +31,13 @@
             background: var(--atfa-primary-light) !important;
         }
 
+        /* Global page padding */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
         /* Hero Section */
         .internship-hero {
             background: linear-gradient(135deg, var(--atfa-primary) 0%, var(--atfa-accent) 100%);
@@ -38,7 +45,7 @@
             color: var(--atfa-white);
             margin-top: 80px;
             text-align: center;
-            min-height: 70vh;
+            min-height: 60vh;
             display: flex;
             align-items: center;
         }
@@ -54,14 +61,14 @@
         .internship-hero-subtitle {
             font-size: 1.2rem;
             max-width: 700px;
-            margin: 0 auto;
+            margin: 20px auto 0;
             opacity: 0.9;
             line-height: 1.6;
         }
 
         /* Program Overview */
         .program-overview {
-            padding: var(--atfa-space-3xl) 0;
+            padding: 80px 0;
             background: var(--atfa-light);
             margin: 0;
         }
@@ -78,23 +85,22 @@
 
         .steps-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: var(--atfa-space-3xl);
-            margin: var(--atfa-space-3xl) auto;
-            padding: 0 var(--atfa-space-2xl);
-            max-width: 1400px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            margin: 60px auto;
+            max-width: 1000px;
         }
 
         .step-card {
             background: var(--atfa-white);
-            padding: var(--atfa-space-3xl) var(--atfa-space-2xl);
-            border-radius: var(--atfa-radius-2xl);
+            padding: 30px;
+            border-radius: var(--atfa-radius-xl);
             box-shadow: var(--atfa-shadow-lg);
             transition: all 0.3s ease;
-            min-height: 300px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
+            gap: 15px;
         }
 
         .step-card:hover {
@@ -126,31 +132,30 @@
 
         /* Mentors Section */
         .mentors-section {
-            padding: var(--atfa-space-3xl) 0;
+            padding: 80px 0;
             background: var(--atfa-white);
             margin: 0;
         }
 
         .mentors-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: var(--atfa-space-3xl);
-            margin: var(--atfa-space-3xl) auto;
-            padding: 0 var(--atfa-space-2xl);
-            max-width: 1400px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            margin: 60px auto;
+            max-width: 1000px;
         }
 
         .mentor-card {
             text-align: center;
-            padding: var(--atfa-space-3xl);
-            border-radius: var(--atfa-radius-2xl);
+            padding: 30px;
+            border-radius: var(--atfa-radius-xl);
             background: var(--atfa-light);
             transition: all 0.3s ease;
             box-shadow: var(--atfa-shadow-lg);
-            min-height: 350px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
+            gap: 15px;
         }
 
         .mentor-card:hover {
@@ -174,7 +179,7 @@
 
         /* Donation Tiers */
         .donation-section {
-            padding: var(--atfa-space-3xl) 0;
+            padding: 80px 0;
             background: linear-gradient(135deg, var(--atfa-primary-light) 0%, var(--atfa-primary) 100%);
             color: var(--atfa-white);
             margin: 0;
@@ -182,25 +187,24 @@
 
         .donation-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: var(--atfa-space-3xl);
-            margin: var(--atfa-space-3xl) auto;
-            padding: 0 var(--atfa-space-2xl);
-            max-width: 1400px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin: 60px auto;
+            max-width: 1000px;
         }
 
         .donation-tier {
             background: rgba(255, 255, 255, 0.1);
-            padding: var(--atfa-space-3xl) var(--atfa-space-xl);
-            border-radius: var(--atfa-radius-2xl);
+            padding: 30px;
+            border-radius: var(--atfa-radius-xl);
             backdrop-filter: blur(10px);
             text-align: center;
             transition: all 0.3s ease;
             border: 1px solid rgba(255, 255, 255, 0.1);
-            min-height: 250px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
+            gap: 15px;
         }
 
         .donation-tier:hover {
@@ -225,7 +229,7 @@
 
         /* CTA Section */
         .cta-section {
-            padding: var(--atfa-space-3xl) 0;
+            padding: 80px 0;
             text-align: center;
             background: var(--atfa-light);
             margin: 0;
@@ -234,19 +238,20 @@
         .cta-section .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: var(--atfa-space-3xl) var(--atfa-space-xl);
+            padding: 60px;
         }
 
         .cta-section p {
             font-size: 1.1rem;
             line-height: 1.7;
-            margin-bottom: var(--atfa-space-xl);
+            margin-bottom: 30px;
             color: var(--atfa-gray-700);
+            padding: 0 40px;
         }
 
         .cta-button {
             display: inline-block;
-            padding: var(--atfa-space-lg) var(--atfa-space-2xl);
+            padding: 20px 40px;
             background: var(--atfa-secondary);
             color: var(--atfa-white);
             text-decoration: none;
@@ -254,7 +259,7 @@
             font-weight: 600;
             font-size: 1.1rem;
             transition: all 0.3s ease;
-            margin-top: var(--atfa-space-2xl);
+            margin-top: 40px;
             box-shadow: 0 10px 30px rgba(255, 143, 0, 0.3);
         }
 
