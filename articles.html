@@ -842,17 +842,23 @@
             border-radius: var(--atfa-radius-2xl);
             overflow: hidden;
             padding: 20px;
+        }
+
+        .grid-item-report {
+            border-radius: var(--atfa-radius-2xl);
+            overflow: hidden;
+            padding: 20px;
             background: url("article_photos/2023_research_study_background.png") repeat;
             background-size: cover;
             background-position: center;
         }
 
-        .grid-item:hover {
+        .grid-item-report:hover {
             transform: translateY(-2px);
             box-shadow: var(--atfa-shadow-md);
         }
 
-        .grid-item img {
+        .grid-item-report img {
             padding: 20px;
             border-radius: var(--atfa-radius-2xl);
             width: 100%;
@@ -961,14 +967,24 @@
     <section class="article-content">
         <div class="container">
             <div class="grid-container">
+                <a href="Documents/Why I Changed My Mind About Leaving School After My Mentor Died.pdf" target="_blank">
+                <div class="grid-item-report">
+                    <!-- <embed src="Documents/Why I Changed My Mind About Leaving School After My Mentor Died.pdf" type="application/pdf" width="100%" height="600px" /> -->
+                    <img src="article_photos/andre_marquis/conference_w_passing_date.png">
+                    <h3>Why I Changed My Mind About Leaving School After My Mentor Died</h3>
+                    <h4>2025</h4>
+                    <h6>Author: Ashwin Joshi, Board of Directors</h6>
+                </div>
+                </a>
                 <a href="https://drive.google.com/file/d/11gR_HH5tZVtSxTBX7QWkhP3cShJ0a4UF/view" target="_blank">
-                <div class="grid-item">
+                <div class="grid-item-report">
                     <img src="article_photos/2023_research_study.png" alt="Andre Marquis">
                     <h2 href="https://drive.google.com/file/d/11gR_HH5tZVtSxTBX7QWkhP3cShJ0a4UF/view">ATFA Financial Literacy Report</h2>
                     <h3>2023</h3>
                     <h6>Author: Ashwin Joshi, Board of Directors</h6>
                 </div>
                 </a>
+                
             </div>
         </div>
     </section>
