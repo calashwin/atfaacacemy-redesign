@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.vite/
+.DS_Store
+*.lognode_modules
+dist
+.DS_Store
