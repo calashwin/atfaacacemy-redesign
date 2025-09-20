@@ -3,8 +3,3 @@ dist/
 .vite/
 .DS_Store
 *.log
-package.json
-package-lock.json
-pnpm-lock.yaml
-yarn.lock
-vite.config.*
